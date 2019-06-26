@@ -1,0 +1,87 @@
+// General Style
+
+//global
+
+.text-shadow {
+	text-shadow: 1px 1px 1px #000;
+}
+
+//text sizes
+.text-small {
+	font-size: .75rem;
+}
+.text-medium {
+	font-size: 2rem;
+}
+.text-large {
+	font-size: 3rem;
+}
+//text colors
+.text-black {
+	color: $black;
+}
+.text-yellow {
+	color: $yellow;
+}
+.text-green {
+	color: $green;
+}
+//background colors
+.bg-black {
+	background-color: $black;
+}
+.bg-yellow {
+	background-color: $yellow;
+}
+.bg-green {
+	background-color: $green;
+}
+.bg-white {
+	background-color: #fff;
+}
+
+a:hover {
+	text-decoration: none;
+}
+.portfolio-project{
+	transition: 0.3s;
+	-webkit-backface-visibility: hidden;
+	top: -1px;
+
+	img {
+		width: 100%;
+		// this hack solves the the flicker on hover
+		margin-bottom: -1px;
+	}
+}
+
+
+
+.portfolio-project:hover {
+	position: relative;
+  top: -5px;
+
+}
+
+.portfolio-box-caption {
+}
+
+//backgrounds
+.bolt-bg {
+	position: relative;
+}
+
+.bolt-bg:before{
+	content: ' ';
+  display: block;
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 0;
+  opacity: .6;
+  background-image: url("../img/GN-Bolt-Pattern.png");
+  background-repeat: repeat;
+}
+
