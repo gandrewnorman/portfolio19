@@ -10083,7 +10083,8 @@ a:hover {
   background-repeat: repeat;
 }
 
-html, body {
+html,
+body {
   width: 100%;
   height: 100%;
   margin: 0px;
@@ -10102,7 +10103,7 @@ header {
   background-size: cover;
 }
 
-.masthead {
+.stormbox {
   height: 100vh;
   min-height: 500px;
   background-size: cover;
@@ -10156,6 +10157,7 @@ a.logo {
 
 .head-info h2 {
   font-size: 2.5rem;
+  line-height: 0.9;
 }
 
 .head-info p {
@@ -10186,7 +10188,7 @@ a.logo {
 header {
   position: relative;
   background-color: black;
-  height: 50vh;
+  height: 75vh;
   min-height: 25rem;
   width: 100%;
   overflow: hidden;
@@ -10256,7 +10258,9 @@ header .overlay {
   z-index: 1100;
 }
 
-.menu span, .menu span::before, .menu span::after {
+.menu span,
+.menu span::before,
+.menu span::after {
   display: block;
   width: 26px;
   right: 0;
@@ -10271,7 +10275,8 @@ header .overlay {
   transition-duration: 0.3s;
 }
 
-.menu span::before, .menu span::after {
+.menu span::before,
+.menu span::after {
   position: absolute;
   content: "";
 }
@@ -10301,7 +10306,8 @@ header .overlay {
   transform: translateY(-9px) rotate(-45deg);
 }
 
-.menu.clicked span:before, .menu.clicked span:after {
+.menu.clicked span:before,
+.menu.clicked span:after {
   background-color: #ffc64f;
 }
 
@@ -10392,7 +10398,9 @@ header .overlay {
           transition-delay: 1.35s;
 }
 
-#nav.show .about, #nav.show .social, #nav.show ul.sub {
+#nav.show .about,
+#nav.show .social,
+#nav.show ul.sub {
   -webkit-transform: translateY(0px);
   transform: translateY(0px);
   opacity: 1;
@@ -10425,7 +10433,7 @@ header .overlay {
 }
 
 #nav ul.main li a {
-  color: #ffc64f;
+  color: #fff;
   text-decoration: none;
   text-transform: uppercase;
   font-size: 1rem;
@@ -10436,11 +10444,11 @@ header .overlay {
 }
 
 #nav ul.main li a span {
-  color: #ffc64f;
+  color: #fff;
 }
 
 #nav ul.main li a:hover {
-  color: #5d8b3d;
+  color: #ffc64f;
 }
 
 #nav ul.sub {
@@ -10518,7 +10526,8 @@ header .overlay {
   background-image: url(https://image.flaticon.com/icons/svg/481/481146.svg) !important;
 }
 
-.carousel-control-next-icon, .carousel-control-prev-icon {
+.carousel-control-next-icon,
+.carousel-control-prev-icon {
   display: inline-block;
   width: 50px;
   height: 50px;
