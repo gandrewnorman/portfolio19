@@ -54,6 +54,17 @@
                     lastScrollTop = st;
                 }
 
+                // 4 picture slideshow
+
+                function openImg(imgName) {
+                    var i, x;
+                    x = document.getElementsByClassName("picture");
+                    for (i = 0; i < x.length; i++) {
+                        x[i].style.display = "none";
+                    }
+                    document.getElementById(imgName).style.display = "block";
+                openImg("pic1");
+                }
                 console.log( 'common fired' );
             },
             finalize: function() {
@@ -117,9 +128,17 @@
                 console.log( 'home body fired' );
             }
         },
+        bs: {
+            init: function() {
+                // Run on page with body class `bs`.
+
+                console.log( 'bs body fired' );
+            }
+        },
         tcs: {
             init: function() {
                 // Run on page with body class `tcs`
+
                 /* MAGNIFIC POPUP CODE **********************************************************
                  *******************************************************************************************/
                 $( '.portfolio-box' ).magnificPopup( {
@@ -148,31 +167,6 @@
                     }
                 } );
 
-                // IG Carousel
-                $('#carouselExample').on('slide.bs.carousel', function(e) {
-
-                var $e = $(e.relatedTarget);
-                var idx = $e.index();
-                var itemsPerSlide = 8;
-                var totalItems = $('.carousel-item').length;
-
-                if (idx >= totalItems - (itemsPerSlide - 1)) {
-                    var it = itemsPerSlide - (totalItems - idx);
-                    for (var i = 0; i < it; i++) {
-                        // append slides to end
-                        if (e.direction == "left") {
-                            $('.carousel-item').eq(i).appendTo('.carousel-inner');
-                        } else {
-                            $('.carousel-item').eq(0).appendTo('.carousel-inner');
-                        }
-                    }
-                }
-            });
-
-            $('#carouselExample').carousel({
-                // interval: 2000
-            });
-
                 console.log( 'code-snippets fired' );
             }
         }
@@ -185,7 +179,9 @@
             if ( func !== '' && namespace[ func ] && typeof namespace[ func ][ funcname ] === 'function' ) {
                 namespace[ func ][ funcname ]( args );
             }
+
         },
+
         loadEvents: function() {
 
             util.fire( 'common' );
@@ -194,11 +190,11 @@
                 util.fire( classnm );
             } );
 
-
             util.fire( 'common', 'finalize' );
         }
     };
 
     $( document ).ready( util.loadEvents );
+
 
 } )( jQuery );
