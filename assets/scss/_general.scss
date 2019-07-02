@@ -2,6 +2,7 @@
 
 //global
 
+
 .text-shadow {
     text-shadow: 1px 1px 1px #000;
 }
@@ -27,6 +28,7 @@
 .text-yellow {
     color: $yellow;
 }
+
 .text-dark-yellow {
     color: $darkYellow;
 }
@@ -95,9 +97,9 @@ a:hover {
         margin-bottom: -1px;
     }
 
-		.portfolio-box-caption {
-				font-size: 1rem;
-		}
+    .portfolio-box-caption {
+        font-size: 1rem;
+    }
 
     span {
         color: #fff;
