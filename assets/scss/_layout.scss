@@ -80,11 +80,11 @@ a.logo {
     h2 {
         font-size: 2.5rem;
         line-height: 0.9;
-        text-shadow: 2px 2px 0px rgba(203, 153, 53, 1);
+        text-shadow: 2px 2px 0px rgba(255, 198, 79, 1);
     }
 
     p {
-        font-size: 1.2rem;
+        font-size: 1rem;
     }
 }
 
@@ -100,7 +100,7 @@ a.logo {
         }
 
         p {
-            font-size: 1.4rem;
+            font-size: 1.2rem;
         }
     }
 }
@@ -108,6 +108,9 @@ a.logo {
 .project-name,
 .project-roles {
     line-height: 1.25;
+}
+.project-roles {
+    font-size: .75rem;
 }
 
 //Video Header Page
@@ -168,7 +171,6 @@ header .container {
 
 
 // ------------------------------------------------------------------
-
 /*  BURGER MENU
 ========================================== */
 .menu {
@@ -353,8 +355,6 @@ header .container {
     transition-delay: 1.35s;
 }
 
-#nav.show .about,
-#nav.show .social,
 #nav.show ul.sub {
     -webkit-transform: translateY(0px);
     -moz-transform: translateY(0px);

@@ -54,17 +54,34 @@
                     lastScrollTop = st;
                 }
 
-                // 4 picture slideshow
-
-                function openImg(imgName) {
-                    var i, x;
-                    x = document.getElementsByClassName("picture");
-                    for (i = 0; i < x.length; i++) {
-                        x[i].style.display = "none";
+                /* MAGNIFIC POPUP CODE **********************************************************
+                 *******************************************************************************************/
+                $( '.portfolio-box' ).magnificPopup( {
+                    type: 'iframe',
+                    iframe: {
+                        patterns: {
+                            youtube: {
+                                index: 'youtube.com/',
+                                id: function( url ) {
+                                    var m = url.match( /[\\?\\&]v=([^\\?\\&]+)/ );
+                                    if ( !m || !m[ 1 ] ) return null;
+                                    return m[ 1 ];
+                                },
+                                src: '//www.youtube.com/embed/%id%?autoplay=1&rel=0'
+                            },
+                            vimeo: {
+                                index: 'vimeo.com/',
+                                id: function( url ) {
+                                    var m = url.match( /(https?:\/\/)?(www.)?(player.)?vimeo.com\/([a-z]*\/)*([0-9]{6,11})[?]?.*/ );
+                                    if ( !m || !m[ 5 ] ) return null;
+                                    return m[ 5 ];
+                                },
+                                src: '//player.vimeo.com/video/%id%?autoplay=1'
+                            }
+                        }
                     }
-                    document.getElementById(imgName).style.display = "block";
-                openImg("pic1");
-                }
+                } );
+
                 console.log( 'common fired' );
             },
             finalize: function() {
@@ -138,34 +155,6 @@
         tcs: {
             init: function() {
                 // Run on page with body class `tcs`
-
-                /* MAGNIFIC POPUP CODE **********************************************************
-                 *******************************************************************************************/
-                $( '.portfolio-box' ).magnificPopup( {
-                    type: 'iframe',
-                    iframe: {
-                        patterns: {
-                            youtube: {
-                                index: 'youtube.com/',
-                                id: function( url ) {
-                                    var m = url.match( /[\\?\\&]v=([^\\?\\&]+)/ );
-                                    if ( !m || !m[ 1 ] ) return null;
-                                    return m[ 1 ];
-                                },
-                                src: '//www.youtube.com/embed/%id%?autoplay=1&rel=0'
-                            },
-                            vimeo: {
-                                index: 'vimeo.com/',
-                                id: function( url ) {
-                                    var m = url.match( /(https?:\/\/)?(www.)?(player.)?vimeo.com\/([a-z]*\/)*([0-9]{6,11})[?]?.*/ );
-                                    if ( !m || !m[ 5 ] ) return null;
-                                    return m[ 5 ];
-                                },
-                                src: '//player.vimeo.com/video/%id%?autoplay=1'
-                            }
-                        }
-                    }
-                } );
 
                 console.log( 'code-snippets fired' );
             }
