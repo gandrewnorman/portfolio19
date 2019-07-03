@@ -68,32 +68,22 @@
                                     return m[ 1 ];
                                 },
                                 src: '//www.youtube.com/embed/%id%?autoplay=1&rel=0'
-                            },
-                            vimeo: {
-                                index: 'vimeo.com/',
-                                id: function( url ) {
-                                    var m = url.match( /(https?:\/\/)?(www.)?(player.)?vimeo.com\/([a-z]*\/)*([0-9]{6,11})[?]?.*/ );
-                                    if ( !m || !m[ 5 ] ) return null;
-                                    return m[ 5 ];
-                                },
-                                src: '//player.vimeo.com/video/%id%?autoplay=1'
                             }
                         }
+                    }
+                } );
+
+                $( '.portfolio-image-box' ).magnificPopup( {
+                    type: 'image',
+                    gallery:{
+                        enabled:true
                     }
                 } );
 
                 console.log( 'common fired' );
             },
             finalize: function() {
-                // Run everywhere. Loaded last.
-                // $( window ).on( "scroll", function() {
-                //     if ( $( window ).scrollTop() ) {
-                //         $( 'nav' ).addClass( 'black' );
-                //         console.log( 'scroll' );
-                //     } else {
-                //         $( 'nav' ).removeClass( 'black' );
-                //     }
-                // } );
+
                 console.log( 'loaded last fired' );
             }
         },
@@ -145,6 +135,13 @@
                 console.log( 'home body fired' );
             }
         },
+        tcs: {
+            init: function() {
+                // Run on page with body class `tcs`
+
+                console.log( 'tcs fired' );
+            }
+        },
         bs: {
             init: function() {
                 // Run on page with body class `bs`.
@@ -152,13 +149,20 @@
                 console.log( 'bs body fired' );
             }
         },
-        tcs: {
+        hq: {
             init: function() {
-                // Run on page with body class `tcs`
+                // Run on page with body class `hq`.
 
-                console.log( 'code-snippets fired' );
+                console.log( 'hq body fired' );
             }
-        }
+        },
+        br4ss: {
+            init: function() {
+                // Run on page with body class `br4ss`.
+
+                console.log( 'br4ss body fired' );
+            }
+        },
     };
 
     var util = {

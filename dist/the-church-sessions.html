@@ -14,6 +14,8 @@
     <!-- build:css -->
     <link href="../assets/css/app.css" rel="stylesheet" />
     <!-- endbuild -->
+    <!-- Magnific Popup -->
+    <link href="../assets/css/magnific-popup.css" rel="stylesheet" />
     <!-- Typekit font embed -->
     <script src="https://use.typekit.net/owi5wgg.js"></script>
     <script>
@@ -40,7 +42,6 @@
             <li><a href="/br4ss-inc.html">BR4SS Inc</a></li>
         </ul>
     </nav>
-    <div class="overlay"></div>
     <!-- /Navigation -->
     <!-- Header Video ---------------------------------------------------------------->
     <header class="video-header">
@@ -56,9 +57,9 @@
             </div>
         </div>
     </header>
-    <section class="content">
-        <!-- Project Roles ---------------------------------------------------------------->
-        <div class="roles mb-5 p-4 d-flex h-100 text-center align-items-center text-small bg-black">
+    <!-- Project Roles ---------------------------------------------------------------->
+    <section>
+        <div class="roles p-4 d-flex h-100 text-center align-items-center text-small bg-black">
             <div class="container">
                 <div class="row text-uppercase font-weight-bold text-yellow">
                     <h2 class="w-100">Roles</h2>
@@ -79,8 +80,10 @@
                 </ul>
             </div>
         </div>
-        <!-- Portfolio Info -->
-        <div class="container mb-4">
+    </section>
+    <!-- Portfolio Info -->
+    <section class="content py-4 bolt-bg">
+        <div class="container">
             <div class="row">
                 <!-- Project Details Section -->
                 <div class="col-md-6 col-lg-4">
@@ -105,30 +108,30 @@
             <p class="mb-4">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
             <!-- /My Contributions Section -->
             <h3 class="mt-1 mb-0 text-uppercase"><strong>YouTube Favorites</strong></h3>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+            <p>A selection of a few of the fan favorites from this session.</p>
             <div class="row">
                 <!-- Popular Videos from Project Section -->
                 <div class="col-sm-6 mb-4">
-                    <div class="embed-responsive embed-responsive-16by9">
-                        <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/KY8Xsm6DA0o" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-                    </div>
+                    <a href="https://www.youtube.com/watch?v=KY8Xsm6DA0o" class="portfolio-box">
+                        <img class="img-fluid" src="/assets/img/portfolio/fullsize/Love-and-Theft--Whiskey-On-My-Breath-thumbnail.jpg" alt="Video Link to Love and Theft's performance of Whiskey On My Breath">
+                    </a>
                 </div>
                 <div class="col-sm-6 mb-4">
-                    <div class="embed-responsive embed-responsive-16by9">
-                        <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/?listType=playlist&list=PLxOnc_3xS0NpxmSCMZE7hPo1tq1NB5hHI&index=0" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-                    </div>
+                    <a href="https://www.youtube.com/watch?v=TcxdxD01K2Q" class="portfolio-box">
+                        <img class="img-fluid" src="/assets/img/portfolio/fullsize/Cody-Johnson-Fenceposts-thumbnail.jpg" alt="Video Link to Cody Johnson's performance of Fenceposts">
+                    </a>
                 </div>
             </div>
             <div class="row">
                 <div class="col-sm-6 mb-4">
-                    <div class="embed-responsive embed-responsive-16by9">
-                        <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/?listType=playlist&list=PLxOnc_3xS0NpxmSCMZE7hPo1tq1NB5hHI&index=0" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-                    </div>
+                    <a href="https://www.youtube.com/watch?v=Nix83cAfcE4" class="portfolio-box">
+                        <img class="img-fluid" src="/assets/img/portfolio/fullsize/Gretchen-and-Jessie-G-Dreamboat-Annie-thumbnail.jpg" alt="Video Link to Gretchen Wilson and Jessie G.'s performance of Dreamboat Annie">
+                    </a>
                 </div>
-                <div class="col-sm-6">
-                    <div class="embed-responsive embed-responsive-16by9">
-                        <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/?listType=playlist&list=PLxOnc_3xS0NpxmSCMZE7hPo1tq1NB5hHI&index=0" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-                    </div>
+                <div class="col-sm-6 mb-4">
+                    <a href="https://www.youtube.com/watch?=vgxrblK9vfvQ" class="portfolio-box">
+                        <img class="img-fluid" src="/assets/img/portfolio/fullsize/Home-Free--Go-Rest-High-On-That-Mountain-thumbnail.jpg" alt="Video Link to Home Free's performance of Go Rest Hight On That Mountain">
+                    </a>
                 </div>
             </div>
             <div class="row">
@@ -182,33 +185,33 @@
         <!-- /Popular Videos from Project Section -->
     </section><!-- /content -->
     <!-- Footer -->
-    <footer class="page-footer bg-black inside-border-white font-small">
+    <footer class="page-footer bg-black font-small">
         <!-- Footer Links -->
         <div class="container">
             <div class="row text-center d-flex justify-content-center pt-5 mb-3">
                 <div class="col-md-2 mb-3">
                     <h6 class="text-uppercase font-weight-bold">
-                        <a class="text-yellow" href="#!">About Gary</a>
+                        <a class="text-yellow" href="/">About Gary</a>
                     </h6>
                 </div>
                 <div class="col-md-2 mb-3">
                     <h6 class="text-uppercase font-weight-bold">
-                        <a class="text-yellow" href="#!">The Church Sessions</a>
+                        <a class="text-yellow" href="/the-church-sessions.html">The Church<br> Sessions</a>
                     </h6>
                 </div>
                 <div class="col-md-2 mb-3">
                     <h6 class="text-uppercase font-weight-bold">
-                        <a class="text-yellow" href="#!">The Bluestone Sessions</a>
+                        <a class="text-yellow" href="/the-bluestone-sessions.html">The Bluestone<br> Sessions</a>
                     </h6>
                 </div>
                 <div class="col-md-2 mb-3">
                     <h6 class="text-uppercase font-weight-bold">
-                        <a class="text-yellow" href="#!">The HQ Sessions</a>
+                        <a class="text-yellow" href="/the-hq-sessions.html">The HQ<br> Sessions</a>
                     </h6>
                 </div>
                 <div class="col-md-2 mb-3">
                     <h6 class="text-uppercase font-weight-bold">
-                        <a class="text-yellow" href="#!">Br4ss Inc</a>
+                        <a class="text-yellow" href="/br4ss-inc.html">Br4ss Inc</a>
                     </h6>
                 </div>
             </div>
@@ -238,7 +241,7 @@
         </div>
         <!-- Footer Links -->
         <!-- Copyright -->
-        <div class="footer-copyright small text-white text-center text-uppercase py-2">©2019 Copyright
+        <div class="footer-copyright small text-white text-center text-uppercase py-2">©2019
             <a class="text-white" href="https://garynorman.me"> garynorman.me</a>
         </div>
         <!-- Copyright -->
