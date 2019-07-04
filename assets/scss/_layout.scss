@@ -20,6 +20,25 @@ header {
     height: 100%;
 }
 
+.page-footer {
+    ul {
+        list-style-type: none;
+        line-height: 1.25;
+    }
+}
+
+.page-footer a.active {
+    color: $yellow !important;
+}
+
+.page-footer a:hover {
+    color: $yellow !important;
+}
+
+.footer-socials a i:hover {
+    color: $yellow !important;
+}
+
 .stormbox {
     height: 100vh;
     min-height: 500px;
@@ -109,6 +128,7 @@ a.logo {
 .project-roles {
     line-height: 1.25;
 }
+
 .project-roles {
     font-size: .75rem;
 }
@@ -510,6 +530,7 @@ header .container {
     ul {
         list-style: none;
     }
+
     li {
         font-size: 1rem;
     }
