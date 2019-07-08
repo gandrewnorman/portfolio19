@@ -89,8 +89,7 @@
                     <div class="col-md-6 col-lg-4">
                         <h3 class="mt-1 mb-2 text-uppercase"><strong>Project</strong></h3>
                         <p class="d-inline-block mt-0 p-2 font-italic text-uppercase text-yellow bg-black">"The HQ Sessions"<br> Acoustic Recording Sessions</p>
-                        <p class="mb-0 font-weight-light">Eat. Sleep. Breath. Music.</p>
-                        <!-- <p class="font-weight-light">Real. Raw. Country Music.</p> -->
+                        <p class="font-weight-light">Real. Raw. Country Music.</p>
                         <p>Country Rebel invited 32 artists out to the Nashville Vineyard Church in Nashville, Tennessee to record a collection of acoustic performances during Country Radio Seminar Week February 2019. Each artist recorded 3-5 acoustic originals and covers. </p>
                     </div>
                     <!-- /Project Details Section -->
@@ -187,52 +186,42 @@
         <footer class="page-footer bg-black font-small">
             <!-- Footer Links -->
             <div class="container">
-                <div class="row text-center d-flex justify-content-center pt-5 mb-3">
-                    <div class="col-md-2 mb-3">
-                        <h6 class="text-uppercase font-weight-bold">
-                            <a class="text-yellow" href="/">About Gary</a>
-                        </h6>
-                    </div>
-                    <div class="col-md-2 mb-3">
-                        <h6 class="text-uppercase font-weight-bold">
-                            <a class="text-yellow" href="/the-church-sessions.html">The Church<br> Sessions</a>
-                        </h6>
-                    </div>
-                    <div class="col-md-2 mb-3">
-                        <h6 class="text-uppercase font-weight-bold">
-                            <a class="text-yellow" href="/the-bluestone-sessions.html">The Bluestone<br> Sessions</a>
-                        </h6>
-                    </div>
-                    <div class="col-md-2 mb-3">
-                        <h6 class="text-uppercase font-weight-bold">
-                            <a class="text-yellow" href="/the-hq-sessions.html">The HQ<br> Sessions</a>
-                        </h6>
-                    </div>
-                    <div class="col-md-2 mb-3">
-                        <h6 class="text-uppercase font-weight-bold">
-                            <a class="text-yellow" href="/br4ss-inc.html">Br4ss Inc</a>
-                        </h6>
-                    </div>
-                </div>
-                <div class="row d-flex text-center justify-content-center mb-md-0 mb-2">
+                <ul class="row text-center d-flex justify-content-center pt-5 mb-3 pl-0">
+                    <li class="col-md-2 mb-3">
+                        <a class="text-uppercase font-weight-bold text-white" href="/">About Gary</a>
+                    </li>
+                    <li class="col-md-2 mb-3">
+                        <a class="text-uppercase font-weight-bold text-white" href="/the-church-sessions.html">The Church<br> Sessions</a>
+                    </li>
+                    <li class="col-md-2 mb-3">
+                        <a class="text-uppercase font-weight-bold text-white" href="/the-bluestone-sessions.html">The Bluestone<br> Sessions</a>
+                    </li>
+                    <li class="col-md-2 mb-3">
+                        <a class="text-uppercase font-weight-bold text-white active" href="/the-hq-sessions.html">The HQ<br> Sessions</a>
+                    </li>
+                    <li class="col-md-2 mb-3">
+                        <a class="text-uppercase font-weight-bold text-white" href="/br4ss-inc.html">Br4ss Inc</a>
+                    </li>
+                </ul>
+                <div class="row d-flex text-center justify-content-center mb-3">
                     <div class="col-md-6 col-12 mt-2">
-                        <p class="text-white font-italic">The world isn't interested in the storms you've encountered, but whether or not you brought in the ship.</p>
+                        <p class="text-yellow font-italic">The world isn't interested in the storms you've encountered, but whether or not you brought in the ship.</p>
                     </div>
                 </div>
                 <div class="row pb-3">
-                    <div class="col-md-12">
+                    <div class="footer-socials col-md-12">
                         <div class="mb-1 text-center">
                             <!-- Facebook -->
-                            <a class="fb-ic">
-                                <i class="fab fa-facebook-f fa-lg text-yellow mr-4"> </i>
+                            <a href="https://www.facebook.com/gandrewnorman">
+                                <i class="fab fa-facebook-f fa-lg text-white mr-4"> </i>
                             </a>
                             <!--Linkedin -->
-                            <a class="li-ic">
-                                <i class="fab fa-linkedin-in fa-lg text-yellow mr-4"> </i>
+                            <a href="https://www.linkedin.com/in/gandrewnorman">
+                                <i class="fab fa-linkedin-in fa-lg text-white mr-4"> </i>
                             </a>
                             <!--Instagram-->
-                            <a class="ins-ic">
-                                <i class="fab fa-instagram fa-lg text-yellow"> </i>
+                            <a href="https://www.instagram.com/garynormanmedia">
+                                <i class="fab fa-instagram fa-lg text-white"> </i>
                             </a>
                         </div>
                     </div>
@@ -249,16 +238,16 @@
         <!-- Bootstrap core JavaScript
 ================================================== -->
         <script type="text/javascript">
-            openImg("pic1");
+        openImg("pic1");
 
-            function openImg(imgName) {
-                var i, x;
-                x = document.getElementsByClassName("picture");
-                for (i = 0; i < x.length; i++) {
-                    x[i].style.display = "none";
-                }
-                document.getElementById(imgName).style.display = "block";
+        function openImg(imgName) {
+            var i, x;
+            x = document.getElementsByClassName("picture");
+            for (i = 0; i < x.length; i++) {
+                x[i].style.display = "none";
             }
+            document.getElementById(imgName).style.display = "block";
+        }
         </script>
         <script src="../assets/js/vendor/jquery.slim.min.js"></script>
         <script src="../assets/js/vendor/jquery.magnific-popup.min.js"></script>

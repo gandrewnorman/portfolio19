@@ -1,6 +1,24 @@
 // General Style
 
 //global
+a:hover {
+    text-decoration: none;
+}
+
+.hover {
+    -webkit-transition: all 0.3s ease;
+    -moz-transition: all 0.3s ease;
+    -o-transition: all 0.3s ease;
+    transition: all 0.3s ease;
+}
+.hover:hover {
+    opacity:.85;
+    -webkit-transition: all 0.3s ease;
+    -moz-transition: all 0.3s ease;
+    -o-transition: all 0.3s ease;
+    transition: all 0.3s ease;
+}
+
 
 
 .text-shadow {
@@ -76,10 +94,6 @@
     border: 1px solid $black;
     outline: 2px solid $white;
     outline-offset: -7px;
-}
-
-a:hover {
-    text-decoration: none;
 }
 
 .content {

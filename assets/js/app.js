@@ -75,8 +75,8 @@
 
                 $( '.portfolio-image-box' ).magnificPopup( {
                     type: 'image',
-                    gallery:{
-                        enabled:true
+                    gallery: {
+                        enabled: true
                     }
                 } );
 
@@ -188,6 +188,5 @@
     };
 
     $( document ).ready( util.loadEvents );
-
 
 } )( jQuery );
