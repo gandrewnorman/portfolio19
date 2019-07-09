@@ -15,6 +15,9 @@ body {
     font-size: 1.1rem;
     letter-spacing: .025rem;
 
+    p {
+        letter-spacing: 0rem;
+    }
 }
 
 header {
@@ -120,7 +123,7 @@ a.logo {
 
     .head-info {
         h2 {
-            font-size: 3rem;
+            font-size: 4rem;
         }
 
         p {
