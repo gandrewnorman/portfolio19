@@ -35,6 +35,7 @@ header {
         line-height: 1.25;
     }
 }
+
 .page-footer a.active {
     color: $yellow !important;
 }
@@ -168,7 +169,7 @@ header video {
 
 header .container {
     position: relative;
-    z-index: 2;
+    z-index: 3;
 }
 
 @media (pointer: coarse) and (hover: none) {
@@ -195,8 +196,21 @@ header .container {
     header.video-header video {
         display: none;
     }
+    header.video-header::before {
+    display: none;
 }
-
+}
+// Pattern overlay
+header.video-header::before {
+    content: "";
+    background: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAQAAAAECAYAAACp8Z5+AAAAG0lEQVQYV2NkYGBogGIGEGAEk0gAWQCsEkMFAFLuAgUPsJBaAAAAAElFTkSuQmCC') repeat;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    position: absolute;
+    z-index: 3;
+}
 
 // ------------------------------------------------------------------
 /*  BURGER MENU
