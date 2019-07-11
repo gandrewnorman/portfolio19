@@ -44,7 +44,8 @@ header {
     color: $yellow !important;
 }
 
-.footer-socials a i:hover {
+.footer-socials a i:hover,
+.menu-nav a i:hover {
     color: $yellow !important;
 }
 
@@ -196,10 +197,12 @@ header .container {
     header.video-header video {
         display: none;
     }
+
     header.video-header::before {
-    display: none;
+        display: none;
+    }
 }
-}
+
 // Pattern overlay
 header.video-header::before {
     content: "";
