@@ -65,13 +65,13 @@ header {
 }
 
 // MAIN LOGO START
-h1.logo {
+h1.logo.webp {
     position: absolute;
     top: 0;
     right: 0;
     bottom: 0;
     left: 0;
-    background-image: url("/assets/img/logo.png");
+    background-image: url("/assets/img/logo/logo.webp");
     font-size: 0px;
     background-position: 50% 50%;
     -webkit-transition: background-position .5s ease;
@@ -83,13 +83,50 @@ h1.logo {
     min-height: 380px;
 }
 
-a.logo {
+h1.logo.no-webp {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background-image: url("/assets/img/logo/logo.png");
+    font-size: 0px;
+    background-position: 50% 50%;
+    -webkit-transition: background-position .5s ease;
+    -moz-transition: background-position .5s ease;
+    transition: background-position .5s ease;
+    background-size: contain;
+    background-repeat: no-repeat;
+    margin: auto 5%;
+    min-height: 380px;
+}
+
+a.logo.webp {
     position: absolute;
     top: .4rem;
     right: 0;
     bottom: 0;
     left: .5rem;
-    background-image: url("/assets/img/logo.png");
+    background-image: url("/assets/img/logo/logo.webp");
+    font-size: 0px;
+    background-position: 0% 0%;
+    background-size: contain;
+    background-repeat: no-repeat;
+    margin: 0;
+    min-height: 100px;
+    -webkit-transition: all 0.3s ease;
+    -moz-transition: all 0.3s ease;
+    -o-transition: all 0.3s ease;
+    transition: all 0.3s ease;
+}
+
+a.logo.no-webp {
+    position: absolute;
+    top: .4rem;
+    right: 0;
+    bottom: 0;
+    left: .5rem;
+    background-image: url("/assets/img/logo/logo.png");
     font-size: 0px;
     background-position: 0% 0%;
     background-size: contain;
@@ -119,9 +156,16 @@ a.logo {
 
 @media screen and (min-width:768px) {
     h1.logo {
-        background-image: url("/assets/img/logo.png");
-        max-height: none;
+        .webp {
+            background-image: url("/assets/img/logo/logo.webp");
+            max-height: none;
+        }
+
+        .no-webp {
+            background-image: url("/assets/img/logo/logo.png");
+        }
     }
+
 
     .head-info {
         h2 {
@@ -175,22 +219,22 @@ header .container {
 
 @media (pointer: coarse) and (hover: none) {
     .tcs header.video-header {
-        background: url('/assets/img/portfolio/fullsize/tcs-header-bg.jpg') $black no-repeat center center scroll;
+        background: url('/assets/img/tcs/tcs-header-bg.jpg') $black no-repeat center center scroll;
         background-size: cover;
     }
 
     .hq header.video-header {
-        background: url('/assets/img/portfolio/fullsize/hq-header-bg.jpg') $black no-repeat center center scroll;
+        background: url('/assets/img/hq/hq-header-bg.jpg') $black no-repeat center center scroll;
         background-size: cover;
     }
 
     .bs header.video-header {
-        background: url('/assets/img/portfolio/fullsize/bs-header-bg.jpg') $black no-repeat center center scroll;
+        background: url('/assets/img/bs/bs-header-bg.jpg') $black no-repeat center center scroll;
         background-size: cover;
     }
 
     .br4ss header.video-header {
-        background: url('/assets/img/portfolio/fullsize/brs-header-bg.jpg') $black no-repeat center center scroll;
+        background: url('/assets/img/br4ss/brs-header-bg.jpg') $black no-repeat center center scroll;
         background-size: cover;
     }
 

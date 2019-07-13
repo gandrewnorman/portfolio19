@@ -56,12 +56,16 @@
     <!-- Video Header -->
     <header class="video-header">
         <video playsinline="playsinline" autoplay="autoplay" muted="muted" loop="loop">
-            <source src="../assets/img/hq-sizzle.mp4" type="video/mp4">
+            <source src="../assets/img/videos/hq-sizzle.mp4" type="video/mp4">
         </video>
         <div class="container h-100">
             <div class="d-flex h-100 text-center align-items-center">
                 <div class="w-100 align-self-end">
-                    <img class="col-10 col-md-6 pb-4" src="../assets/img/portfolio/fullsize/hq-logo.png">
+                    <picture>
+                        <source srcset="/assets/img/logo/hq-logo.webp" type="image/webp">
+                        <source srcset="/assets/img/logo/hq-logo.png" type="image/png">
+                        <img class="col-10 col-md-6 pb-4" src="/assets/img/logo/hq-logo.png">
+                    </picture>
                 </div>
             </div>
         </div>
@@ -150,16 +154,24 @@
             <!-- YouTube Favorites Section -->
             <div class="row">
                 <div class="col-12">
-                    <h3 class="mt-1 mb-0 text-uppercase"><strong>YouTube Favorites</strong></h3>
+                    <h3 class="mt-1 mb-3 text-uppercase"><strong>YouTube Favorites</strong></h3>
                 </div>
                 <div class="col-sm-6 mb-4">
                     <a href="https://www.youtube.com/watch?v=9xQjpcHGlzc?autoplay=1&rel=0" class="portfolio-box hover shadow">
-                        <img class="img-fluid" src="/assets/img/portfolio/fullsize/Aaron-Lewis-It's-Been-Awhile--HQ--thumbnail.jpg" alt="Video Link to Aaron Lewis' performance of It's Been Awhile">
+                        <picture>
+                            <source srcset="../assets/img/hq/Aaron-Lewis-It's-Been-Awhile--HQ--thumbnail.webp" type="image/webp">
+                            <source srcset="../assets/img/hq/Aaron-Lewis-It's-Been-Awhile--HQ--thumbnail.jpg" type="image/jpeg">
+                            <img class="img-fluid" src="../assets/img/hq/Aaron-Lewis-It's-Been-Awhile--HQ--thumbnail.jpg" alt="Video Link to Aaron Lewis' performance of It's Been Awhile">
+                        </picture>
                     </a>
                 </div>
                 <div class="col-sm-6 mb-4">
                     <a href="https://www.youtube.com/watch?v=y4SGmslZ3jA?autoplay=1&rel=0" class="portfolio-box hover shadow">
-                        <img class="img-fluid" src="/assets/img/portfolio/fullsize/Cody-Johnson--Monday-Morning-Merle--HQ--Thumbnail.jpg" alt="Video Link to Cody Johnson's performance of Monday Morning Merle">
+                        <picture>
+                            <source srcset="../assets/img/hq/Cody-Johnson--Monday-Morning-Merle--HQ--Thumbnail.webp" type="image/webp">
+                            <source srcset="../assets/img/hq/Cody-Johnson--Monday-Morning-Merle--HQ--Thumbnail.jpg" type="image/jpeg">
+                            <img class="img-fluid" src="/assets/img/hq/Cody-Johnson--Monday-Morning-Merle--HQ--Thumbnail.jpg" alt="Video Link to Cody Johnson's performance of Monday Morning Merle">
+                        </picture>
                     </a>
                 </div>
             </div>
@@ -167,12 +179,20 @@
             <div class="row">
                 <div class="col-sm-6 mb-4">
                     <a href="https://www.youtube.com/watch?v=yIHqKr7YLXI?autoplay=1&rel=0" class="portfolio-box hover shadow">
-                        <img class="img-fluid" src="/assets/img/portfolio/fullsize/Ashley-McBryde--Rattlesnake-Preacher--HQ--Thumbnail.jpg" alt="Video Link to Ashley McBryde's performance of Rattlesnake Preacher">
+                        <picture>
+                            <source srcset="../assets/img/hq/Ashley-McBryde--Rattlesnake-Preacher--HQ--Thumbnail.webp" type="image/webp">
+                            <source srcset="../assets/img/hq/Ashley-McBryde--Rattlesnake-Preacher--HQ--Thumbnail.jpg" type="image/jpeg">
+                            <img class="img-fluid" src="/assets/img/hq/Ashley-McBryde--Rattlesnake-Preacher--HQ--Thumbnail.jpg" alt="Video Link to Ashley McBryde's performance of Rattlesnake Preacher">
+                        </picture>
                     </a>
                 </div>
                 <div class="col-sm-6 mb-4">
                     <a href="https://www.youtube.com/watch?v=NJFuaHcELSY?autoplay=1&rel=0" class="portfolio-box hover shadow">
-                        <img class="img-fluid" src="/assets/img/portfolio/fullsize/Drake-White--50-Years-Too-Late--HQ--Thumbnail.jpg" alt="Video Link to Drake White's performance of 50 Years Too Late">
+                        <picture>
+                            <source srcset="../assets/img/hq/Drake-White--50-Years-Too-Late--HQ--Thumbnail.webp" type="image/webp">
+                            <source srcset="../assets/img/hq/Drake-White--50-Years-Too-Late--HQ--Thumbnail.jpg" type="image/jpeg">
+                            <img class="img-fluid" src="/assets/img/hq/Drake-White--50-Years-Too-Late--HQ--Thumbnail.jpg" alt="Video Link to Drake White's performance of 50 Years Too Late">
+                        </picture>
                     </a>
                 </div>
             </div>
@@ -186,17 +206,33 @@
                 <div class="container">
                     <div class="row pt-2">
                         <div class="col-12">
-                            <div id="pic1" class="picture" style="display:none">
-                                <img class="img-fluid" src="/assets/img/portfolio/fullsize/hq/hq-pic1.jpg" alt="pic1">
+                            <div id="pic1" class="stills" style="display:none">
+                                <picture>
+                                    <source srcset="/assets/img/hq/stills/webp/hq-pic1.webp" type="image/webp">
+                                    <source srcset="/assets/img/hq/stills/hq-pic1.jpg" type="image/jpeg">
+                                    <img class="img-fluid" src="/assets/img/hq/stills/hq-pic1.jpg" alt="pic1">
+                                </picture>
                             </div>
-                            <div id="pic2" class="picture" style="display:none">
-                                <img class="img-fluid" src="/assets/img/portfolio/fullsize/hq/hq-pic2.jpg" alt="pic2">
+                            <div id="pic2" class="stills" style="display:none">
+                                <picture>
+                                    <source srcset="/assets/img/hq/stills/webp/hq-pic2.webp" type="image/webp">
+                                    <source srcset="/assets/img/hq/stills/hq-pic2.jpg" type="image/jpeg">
+                                    <img class="img-fluid" src="/assets/img/hq/stills/hq-pic2.jpg" alt="pic2">
+                                </picture>
                             </div>
-                            <div id="pic3" class="picture" style="display:none">
-                                <img class="img-fluid" src="/assets/img/portfolio/fullsize/hq/hq-pic3.jpg" alt="pic3">
+                            <div id="pic3" class="stills" style="display:none">
+                                <picture>
+                                    <source srcset="/assets/img/hq/stills/webp/hq-pic3.webp" type="image/webp">
+                                    <source srcset="/assets/img/hq/stills/hq-pic3.jpg" type="image/jpeg">
+                                    <img class="img-fluid" src="/assets/img/hq/stills/hq-pic3.jpg" alt="pic3">
+                                </picture>
                             </div>
-                            <div id="pic4" class="picture" style="display:none">
-                                <img class="img-fluid" src="/assets/img/portfolio/fullsize/hq/hq-pic4.jpg" alt="pic4">
+                            <div id="pic4" class="stills" style="display:none">
+                                <picture>
+                                    <source srcset="/assets/img/hq/stills/webp/hq-pic4.webp" type="image/webp">
+                                    <source srcset="/assets/img/hq/stills/hq-pic4.jpg" type="image/jpeg">
+                                    <img class="img-fluid" src="/assets/img/hq/stills/hq-pic4.jpg" alt="pic4">
+                                </picture>
                             </div>
                         </div>
                     </div>
@@ -204,22 +240,38 @@
                     <div class="row pt-0 pb-4 no-gutters">
                         <div class="col">
                             <a href="javascript:void(0)" class="hover" onclick="openImg('pic1');">
-                                <img class="img-fluid" src="/assets/img/portfolio/fullsize/hq/hq-pic1.jpg" alt="pic1">
+                                <picture>
+                                    <source srcset="/assets/img/hq/stills/thumbs/hq-pic1.webp" type="image/webp">
+                                    <source srcset="/assets/img/hq/stills/thumbs/hq-pic1.jpg" type="image/jpeg">
+                                    <img class="img-fluid" src="/assets/img/hq/stills/thumbs/hq-pic1.jpg" alt="pic1">
+                                </picture>
                             </a>
                         </div>
                         <div class="col">
                             <a href="javascript:void(0)" class="hover" onclick="openImg('pic2');">
-                                <img class="img-fluid" src="/assets/img/portfolio/fullsize/hq/hq-pic2.jpg" alt="pic2">
+                                <picture>
+                                    <source srcset="/assets/img/hq/stills/thumbs/hq-pic2.webp" type="image/webp">
+                                    <source srcset="/assets/img/hq/stills/thumbs/hq-pic2.jpg" type="image/jpeg">
+                                    <img class="img-fluid" src="/assets/img/hq/stills/thumbs/hq-pic2.jpg" alt="pic2">
+                                </picture>
                             </a>
                         </div>
                         <div class="col">
                             <a href="javascript:void(0)" class="hover" onclick="openImg('pic3');">
-                                <img class="img-fluid" src="/assets/img/portfolio/fullsize/hq/hq-pic3.jpg" alt="pic3">
+                                <picture>
+                                    <source srcset="/assets/img/hq/stills/thumbs/hq-pic3.webp" type="image/webp">
+                                    <source srcset="/assets/img/hq/stills/thumbs/hq-pic3.jpg" type="image/jpeg">
+                                    <img class="img-fluid" src="/assets/img/hq/stills/thumbs/hq-pic3.jpg" alt="pic3">
+                                </picture>
                             </a>
                         </div>
                         <div class="col">
                             <a href="javascript:void(0)" class="hover" onclick="openImg('pic4');">
-                                <img class="img-fluid" src="/assets/img/portfolio/fullsize/hq/hq-pic4.jpg" alt="pic4">
+                                <picture>
+                                    <source srcset="/assets/img/hq/stills/thumbs/hq-pic4.webp" type="image/webp">
+                                    <source srcset="/assets/img/hq/stills/thumbs/hq-pic4.jpg" type="image/jpeg">
+                                    <img class="img-fluid" src="/assets/img/hq/stills/thumbs/hq-pic4.jpg" alt="pic4">
+                                </picture>
                             </a>
                         </div>
                     </div>
@@ -287,7 +339,7 @@
         <!-- /container -->
         <!-- Copyright -->
         <div class="footer-copyright small text-white text-center text-uppercase py-2">©2019
-            <a class="text-white" href="https://garynorman.me"> garynorman.me</a>
+            <a class="text-white" href="/"> garynorman.me</a>
         </div>
         <!-- /Copyright -->
     </footer>
@@ -299,13 +351,14 @@
 
     function openImg(imgName) {
         var i, x;
-        x = document.getElementsByClassName("picture");
+        x = document.getElementsByClassName("stills");
         for (i = 0; i < x.length; i++) {
             x[i].style.display = "none";
         }
         document.getElementById(imgName).style.display = "block";
     }
     </script>
+    <script src="../assets/js/vendor/modernizr-custom.js"></script>
     <script src="../assets/js/vendor/jquery.slim.min.js"></script>
     <script src="../assets/js/vendor/jquery.magnific-popup.min.js"></script>
     <script src="../assets/js/vendor/popper.min.js"></script>

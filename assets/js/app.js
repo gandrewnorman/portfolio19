@@ -8,6 +8,19 @@
         common: {
             init: function() {
                 // Run everywhere.
+
+                /* Modernizer for WebP images in CSS backgrounds ******************************************************************************/
+                Modernizr.on( 'webp', function( result ) {
+                    if ( result ) {
+                        // supported browsers
+                        $( '.logo' ).toggleClass( 'webp' );
+                    } else {
+                        // not-supported browsers
+                        $( '.logo' ).toggleClass( 'no-webp' );
+                    }
+                } );
+
+                /* Showing Menu  ******************************************************************************/
                 $( '.menu, .overlay' ).click( function() {
                     $( '.menu' ).toggleClass( 'clicked' );
                     $( '#nav' ).toggleClass( 'show' );
@@ -54,8 +67,7 @@
                     lastScrollTop = st;
                 }
 
-                /* MAGNIFIC POPUP CODE **********************************************************
-                 *******************************************************************************************/
+                /* MAGNIFIC POPUP CODE *****************************************************************/
                 $( '.portfolio-box' ).magnificPopup( {
                     type: 'iframe',
                     iframe: {
