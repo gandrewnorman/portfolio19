@@ -15,11 +15,13 @@
                         // supported browsers
                         $( '.logo' ).toggleClass( 'webp' );
                         $( '.video-header' ).toggleClass( 'webp' );
+                        console.log('supported');
 
                     } else {
                         // not-supported browsers
                         $( '.logo' ).toggleClass( 'no-webp' );
                         $( '.video-header' ).toggleClass( 'no-webp' );
+                        console.log('not supported');
                     }
                 } );
 
