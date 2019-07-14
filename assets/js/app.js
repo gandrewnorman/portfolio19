@@ -14,9 +14,12 @@
                     if ( result ) {
                         // supported browsers
                         $( '.logo' ).toggleClass( 'webp' );
+                        $( '.video-header' ).toggleClass( 'webp' );
+
                     } else {
                         // not-supported browsers
                         $( '.logo' ).toggleClass( 'no-webp' );
+                        $( '.video-header' ).toggleClass( 'no-webp' );
                     }
                 } );
 

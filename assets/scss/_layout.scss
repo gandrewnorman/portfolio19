@@ -218,22 +218,38 @@ header .container {
 }
 
 @media (pointer: coarse) and (hover: none) {
-    .tcs header.video-header {
+    .tcs header.video-header.webp {
+        background: url('/assets/img/tcs/tcs-header-bg.webp') $black no-repeat center center scroll;
+        background-size: cover;
+    }
+    .tcs header.video-header.no-webp {
         background: url('/assets/img/tcs/tcs-header-bg.jpg') $black no-repeat center center scroll;
         background-size: cover;
     }
 
-    .hq header.video-header {
+    .hq header.video-header.webp {
+        background: url('/assets/img/hq/hq-header-bg.webp') $black no-repeat center center scroll;
+        background-size: cover;
+    }
+    .hq header.video-header.no-webp {
         background: url('/assets/img/hq/hq-header-bg.jpg') $black no-repeat center center scroll;
         background-size: cover;
     }
 
-    .bs header.video-header {
+    .bs header.video-header.webp {
+        background: url('/assets/img/bs/bs-header-bg.webp') $black no-repeat center center scroll;
+        background-size: cover;
+    }
+    .bs header.video-header.no-webp {
         background: url('/assets/img/bs/bs-header-bg.jpg') $black no-repeat center center scroll;
         background-size: cover;
     }
 
-    .br4ss header.video-header {
+    .br4ss header.video-header.webp {
+        background: url('/assets/img/br4ss/brs-header-bg.webp') $black no-repeat center center scroll;
+        background-size: cover;
+    }
+    .br4ss header.video-header.no-webp {
         background: url('/assets/img/br4ss/brs-header-bg.jpg') $black no-repeat center center scroll;
         background-size: cover;
     }
