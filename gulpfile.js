@@ -79,9 +79,8 @@ gulp.task('vendor', gulp.parallel('vendor:fonts', 'vendor:js'));
 gulp.task('vendor:build', function() {
     var jsStream = gulp
         .src([
-            "./assets/js/vendor/lazy.js",
-            "./assets/js/vendor/modernizr-custom.js",
             "./assets/js/vendor/bootstrap.bundle.min.js",
+            "./assets/js/vendor/bootstrap.min.js",
             "./assets/js/vendor/jquery.slim.min.js",
             "./assets/js/vendor/popper.min.js",
             "./assets/js/vendor/jquery.magnific-popup.min.js"
