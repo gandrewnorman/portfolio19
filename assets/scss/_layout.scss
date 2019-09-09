@@ -16,7 +16,10 @@ body {
     letter-spacing: .025rem;
 
     p {
+        font-family: $freight, sans-serif;
         letter-spacing: 0rem;
+        margin-bottom: .5rem;
+
     }
 }
 
@@ -25,8 +28,12 @@ header {
     height: 100%;
 }
 
-.content {
-    z-index: 1;
+h3 {
+    margin-bottom: 1rem;
+}
+
+.container-fluid.standard-def {
+    max-width: 2000px;
 }
 
 .page-footer {
@@ -44,61 +51,8 @@ header {
     color: $yellow !important;
 }
 
-.footer-socials a i:hover,
-.menu-nav a i:hover {
+.footer-socials a i:hover {
     color: $yellow !important;
-}
-
-.stormbox {
-    height: 100vh;
-    min-height: 500px;
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-}
-
-
-// Canvas Styles
-#rainbox {
-    width: 100vw;
-    height: 100vh;
-}
-
-// MAIN LOGO START
-h1.logo.webp {
-    position: absolute;
-    top: 0;
-    right: 0;
-    bottom: 0;
-    left: 0;
-    background-image: url("/assets/img/logo/logo.webp");
-    font-size: 0px;
-    background-position: 50% 50%;
-    -webkit-transition: background-position .5s ease;
-    -moz-transition: background-position .5s ease;
-    transition: background-position .5s ease;
-    background-size: contain;
-    background-repeat: no-repeat;
-    margin: auto 5%;
-    min-height: 380px;
-}
-
-h1.logo.no-webp {
-    position: absolute;
-    top: 0;
-    right: 0;
-    bottom: 0;
-    left: 0;
-    background-image: url("/assets/img/logo/logo.png");
-    font-size: 0px;
-    background-position: 50% 50%;
-    -webkit-transition: background-position .5s ease;
-    -moz-transition: background-position .5s ease;
-    transition: background-position .5s ease;
-    background-size: contain;
-    background-repeat: no-repeat;
-    margin: auto 5%;
-    min-height: 380px;
 }
 
 a.logo.webp {
@@ -139,146 +93,10 @@ a.logo.no-webp {
     transition: all 0.3s ease;
 }
 
-.head-info {
-    padding: 0px 0px 10px 0px;
-    letter-spacing: 0;
 
-    h2 {
-        font-size: 2.5rem;
-        line-height: 0.9;
-        text-shadow: 2px 2px 0px rgba(255, 198, 79, 1);
-    }
+/*  BURGER MENU========================================== */
 
-    p {
-        font-size: 1rem;
-    }
-}
-
-@media screen and (min-width:768px) {
-    h1.logo {
-        .webp {
-            background-image: url("/assets/img/logo/logo.webp");
-            max-height: none;
-        }
-
-        .no-webp {
-            background-image: url("/assets/img/logo/logo.png");
-        }
-    }
-
-
-    .head-info {
-        h2 {
-            font-size: 4rem;
-        }
-
-        p {
-            font-size: 1.2rem;
-        }
-    }
-}
-
-.project-name,
-.project-roles {
-    line-height: 1.25;
-}
-
-.project-roles {
-    font-size: .75rem;
-}
-
-//Video Header Page
-header {
-    position: relative;
-    background-color: black;
-    height: 75vh;
-    min-height: 25rem;
-    width: 100%;
-    overflow: hidden;
-}
-
-header video {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    min-width: 100%;
-    min-height: 100%;
-    width: auto;
-    height: auto;
-    z-index: 0;
-    -ms-transform: translateX(-50%) translateY(-50%);
-    -moz-transform: translateX(-50%) translateY(-50%);
-    -webkit-transform: translateX(-50%) translateY(-50%);
-    transform: translateX(-50%) translateY(-50%);
-}
-
-header .container {
-    position: relative;
-    z-index: 3;
-}
-
-@media (pointer: coarse) and (hover: none) {
-    .tcs header.video-header.webp {
-        background: url('/assets/img/tcs/tcs-header-bg.webp') $black no-repeat center center scroll;
-        background-size: cover;
-    }
-    .tcs header.video-header.no-webp {
-        background: url('/assets/img/tcs/tcs-header-bg.jpg') $black no-repeat center center scroll;
-        background-size: cover;
-    }
-
-    .hq header.video-header.webp {
-        background: url('/assets/img/hq/hq-header-bg.webp') $black no-repeat center center scroll;
-        background-size: cover;
-    }
-    .hq header.video-header.no-webp {
-        background: url('/assets/img/hq/hq-header-bg.jpg') $black no-repeat center center scroll;
-        background-size: cover;
-    }
-
-    .bs header.video-header.webp {
-        background: url('/assets/img/bs/bs-header-bg.webp') $black no-repeat center center scroll;
-        background-size: cover;
-    }
-    .bs header.video-header.no-webp {
-        background: url('/assets/img/bs/bs-header-bg.jpg') $black no-repeat center center scroll;
-        background-size: cover;
-    }
-
-    .br4ss header.video-header.webp {
-        background: url('/assets/img/br4ss/brs-header-bg.webp') $black no-repeat center center scroll;
-        background-size: cover;
-    }
-    .br4ss header.video-header.no-webp {
-        background: url('/assets/img/br4ss/brs-header-bg.jpg') $black no-repeat center center scroll;
-        background-size: cover;
-    }
-
-    header.video-header video {
-        display: none;
-    }
-
-    header.video-header::before {
-        display: none;
-    }
-}
-
-// Pattern overlay
-header.video-header::before {
-    content: "";
-    background: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAQAAAAECAYAAACp8Z5+AAAAG0lEQVQYV2NkYGBogGIGEGAEk0gAWQCsEkMFAFLuAgUPsJBaAAAAAElFTkSuQmCC') repeat;
-    top: 0;
-    left: 0;
-    bottom: 0;
-    right: 0;
-    position: absolute;
-    z-index: 3;
-}
-
-// ------------------------------------------------------------------
-/*  BURGER MENU
-========================================== */
-.menu {
+.menu-lines {
     width: 80px;
     height: 80px;
     position: fixed;
@@ -287,7 +105,7 @@ header.video-header::before {
     right: -1%;
 }
 
-.menu span {
+.menu-lines span {
     position: relative;
     margin-top: 9px;
     margin-bottom: 9px;
@@ -303,9 +121,9 @@ header.video-header::before {
     z-index: 1100;
 }
 
-.menu span,
-.menu span::before,
-.menu span::after {
+.menu-lines span,
+.menu-lines span::before,
+.menu-lines span::after {
     display: block;
     width: 26px;
     right: 0;
@@ -325,30 +143,30 @@ header.video-header::before {
     box-shadow: 1px 1px 0px 0px rgba(203, 153, 53, 1);
 }
 
-.menu span::before,
-.menu span::after {
+.menu-lines span::before,
+.menu-lines span::after {
     position: absolute;
     content: "";
 
 }
 
-.menu span::before {
+.menu-lines span::before {
     top: -9px;
     width: 20px
 }
 
-.menu span::after {
+.menu-lines span::after {
     top: 9px;
     width: 33px;
 
 }
 
-.menu.clicked span {
+.menu-lines.clicked span {
     background-color: transparent;
     box-shadow: none;
 }
 
-.menu.clicked span::before {
+.menu-lines.clicked span::before {
     -webkit-transform: translateY(9px) rotate(45deg);
     -moz-transform: translateY(9px) rotate(45deg);
     -ms-transform: translateY(9px) rotate(45deg);
@@ -358,7 +176,7 @@ header.video-header::before {
     box-shadow: none;
 }
 
-.menu.clicked span::after {
+.menu-lines.clicked span::after {
     -webkit-transform: translateY(-9px) rotate(-45deg);
     -moz-transform: translateY(-9px) rotate(-45deg);
     -ms-transform: translateY(-9px) rotate(-45deg);
@@ -367,12 +185,12 @@ header.video-header::before {
     box-shadow: none;
 }
 
-.menu.clicked span:before,
-.menu.clicked span:after {
+.menu-lines.clicked span:before,
+.menu-lines.clicked span:after {
     background-color: $yellow;
 }
 
-.menu:hover {
+.menu-lines:hover {
     cursor: pointer;
 }
 
@@ -386,9 +204,14 @@ header.video-header::before {
     top: 0;
     right: 0;
     height: 100%;
-    max-width: 400px;
+    max-width: 500px;
     width: 100%;
     padding: 100px 40px 60px 40px;
+
+    @media (min-width: 667px) {
+        padding: 120px 30px 70px 20px;
+    }
+
     overflow-y: auto;
     opacity: 0.97;
     -webkit-transform: translateX(100%);
@@ -460,21 +283,6 @@ header.video-header::before {
     transition-delay: 1.35s;
 }
 
-#nav.show ul.sub {
-    -webkit-transform: translateY(0px);
-    -moz-transform: translateY(0px);
-    -ms-transform: translateY(0px);
-    -o-transform: translateY(0px);
-    transform: translateY(0px);
-    opacity: 1;
-    transition-delay: .85s;
-}
-
-@media (min-width: 667px) {
-    #nav {
-        padding: 120px 30px 70px 20px;
-    }
-}
 
 #nav ul.main {
     list-style-type: none;
@@ -500,7 +308,7 @@ header.video-header::before {
 }
 
 #nav ul.main li a {
-    color: #fff;
+    color: $white;
     text-decoration: none;
     text-transform: uppercase;
     font-size: 1rem;
@@ -510,10 +318,13 @@ header.video-header::before {
     -moz-transition: all 0.3s ease;
     -o-transition: all 0.3s ease;
     transition: all 0.3s ease;
-
 }
 
 #nav ul.main li a.active {
+    color: $yellow;
+}
+
+#nav ul.main li a:hover {
     color: $yellow;
 }
 
@@ -529,55 +340,13 @@ header.video-header::before {
     margin-top: 2px;
     /* This creates some space between the element and the border. */
     border-bottom: 3px solid $yellow;
-    /* This creates the border. Replace black with whatever color you want. */
+    /* This creates the border. */
 }
 
 #nav ul.main li a span {
-    color: #fff;
+    color: $white;
 }
 
-#nav ul.main li a:hover {
-    color: $yellow;
-}
-
-#nav ul.sub {
-    list-style-type: none;
-    margin-top: 40px;
-    -webkit-transform: translateY(30px);
-    -moz-transform: translateY(30px);
-    -ms-transform: translateY(30px);
-    -o-transform: translateY(30px);
-    transform: translateY(30px);
-    opacity: 0;
-    -webkit-transition: all 0.4s ease;
-    -moz-transition: all 0.4s ease;
-    -o-transition: all 0.4s ease;
-    transition: all 0.4s ease;
-}
-
-#nav ul.sub li {
-    margin-bottom: 10px;
-}
-
-#nav ul.sub li:last-of-type {
-    margin-bottom: 0px;
-}
-
-#nav ul.sub li a {
-    color: #ffffff;
-    font-family: "Raleway", sans-serif;
-    letter-spacing: 1px;
-    font-size: 0.9rem;
-    text-decoration: none;
-    -webkit-transition: all 0.3s ease;
-    -moz-transition: all 0.3s ease;
-    -o-transition: all 0.3s ease;
-    transition: all 0.3s ease;
-}
-
-#nav ul.sub li a:hover {
-    color: #b7ac7f;
-}
 
 .nav-up {
     top: -100px !important;
@@ -587,17 +356,255 @@ header.video-header::before {
     top: .04rem !important;
 }
 
-// START PAGE CONTENT
+.social-nav a i:hover {
+    color: $yellow !important;
+}
+
+//Video Header Page
+header {
+    position: relative;
+    background-color: black;
+    height: 75vh;
+    min-height: 25rem;
+    width: 100%;
+    overflow: hidden;
+}
+
+header video {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    min-width: 100%;
+    min-height: 100%;
+    width: auto;
+    height: auto;
+    z-index: 0;
+    -ms-transform: translateX(-50%) translateY(-50%);
+    -moz-transform: translateX(-50%) translateY(-50%);
+    -webkit-transform: translateX(-50%) translateY(-50%);
+    transform: translateX(-50%) translateY(-50%);
+}
+
+header .container {
+    position: relative;
+    z-index: 3;
+}
+
+@media (pointer: coarse) and (hover: none) {
+    .tcs header.video-header.webp {
+        background: url('/assets/img/tcs/tcs-header-bg.webp') $black no-repeat center center scroll;
+        background-size: cover;
+    }
+
+    .tcs header.video-header.no-webp {
+        background: url('/assets/img/tcs/tcs-header-bg.jpg') $black no-repeat center center scroll;
+        background-size: cover;
+    }
+
+    .hq header.video-header.webp {
+        background: url('/assets/img/hq/hq-header-bg.webp') $black no-repeat center center scroll;
+        background-size: cover;
+    }
+
+    .hq header.video-header.no-webp {
+        background: url('/assets/img/hq/hq-header-bg.jpg') $black no-repeat center center scroll;
+        background-size: cover;
+    }
+
+    .bs header.video-header.webp {
+        background: url('/assets/img/bs/bs-header-bg.webp') $black no-repeat center center scroll;
+        background-size: cover;
+    }
+
+    .bs header.video-header.no-webp {
+        background: url('/assets/img/bs/bs-header-bg.jpg') $black no-repeat center center scroll;
+        background-size: cover;
+    }
+
+    .br4ss header.video-header.webp {
+        background: url('/assets/img/br4ss/brs-header-bg.webp') $black no-repeat center center scroll;
+        background-size: cover;
+    }
+
+    .br4ss header.video-header.no-webp {
+        background: url('/assets/img/br4ss/brs-header-bg.jpg') $black no-repeat center center scroll;
+        background-size: cover;
+    }
+
+    .gj header.video-header.webp {
+        background: url('/assets/img/gj/gj-header-bg.webp') $black no-repeat center center scroll;
+        background-size: cover;
+    }
+
+    .gj header.video-header.no-webp {
+        background: url('/assets/img/gj/gj-header-bg.jpg') $black no-repeat center center scroll;
+        background-size: cover;
+    }
+
+    header.video-header video {
+        display: none;
+    }
+
+    header.video-header::before {
+        display: none;
+    }
+}
+
+// Pattern overlay
+header.video-header::before {
+    content: "";
+    background: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAQAAAAECAYAAACp8Z5+AAAAG0lEQVQYV2NkYGBogGIGEGAEk0gAWQCsEkMFAFLuAgUPsJBaAAAAAElFTkSuQmCC') repeat;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    position: absolute;
+    z-index: 3;
+}
+
+// START HOMEPAGE CONTENT ----------------------------------------------------/
+.stormbox {
+    z-index: 2;
+    height: 100vh;
+    min-height: 500px;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+
+}
+
+
+// Canvas Styles
+#rainbox {
+    width: 100vw;
+    height: 100vh;
+}
+
+// Main Rainbox Logo
+h1.logo.webp {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background-image: url("/assets/img/logo/logo.webp");
+    font-size: 0px;
+    background-position: 40% 50%;
+    background-size: contain;
+    background-repeat: no-repeat;
+    margin: auto 5%;
+    min-height: 380px;
+}
+
+h1.logo.no-webp {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background-image: url("/assets/img/logo/logo.png");
+    font-size: 0px;
+    background-position: 40% 50%;
+    background-size: contain;
+    background-repeat: no-repeat;
+    margin: auto 5%;
+    min-height: 380px;
+}
+
+@media screen and (min-width:768px) {
+    h1.logo {
+        .webp {
+            background-image: url("/assets/img/logo/logo.webp");
+            max-height: none;
+        }
+
+        .no-webp {
+            background-image: url("/assets/img/logo/logo.png");
+        }
+    }
+}
+
+.head-info {
+    position: relative;
+    letter-spacing: 0;
+    padding: 0px;
+    margin: 50px 0;
+    z-index: 2;
+
+    h2 {
+        font-size: 2.8rem;
+        line-height: 0.9;
+        // text-shadow: 2px 2px 0px $yellow;
+
+    }
+
+    p {
+        font-size: 1rem;
+        font-family: $freight;
+        letter-spacing: .3px;
+    }
+}
+
+@media screen and (min-width:768px) {
+    .head-info {
+        h2 {
+            font-size: 3rem;
+            z-index: 10;
+        }
+
+        p {
+            font-size: 1.2rem;
+        }
+    }
+}
+
+@media screen and (min-width:1140px) {
+    .head-info {
+        h2 {
+            font-size: 4rem;
+        }
+
+        p {
+            font-size: 1.2rem;
+        }
+    }
+}
+
+.portfolio-project {
+    h2.project-title {
+        line-height: .65;
+
+        span.emoji-img {
+            line-height: 1.4;
+        }
+
+        @media screen and (max-width:500px) {
+            span.project-title-category {
+                font-size: 1.5rem;
+            }
+        }
+
+        span.project-title-roles {
+            font-size: 1rem;
+            font-family: $freight;
+        }
+    }
+}
+
+
+// START PAGE CONTENT ----------------------------------------------------/
+
 .roles {
     border-top: 3px solid $yellow;
     border-bottom: 3px solid $yellow;
+    font-family: $freight;
 
-    h2 {
-        font-size: 2.5rem;
-        text-shadow: 2px 2px 0px rgba(203, 153, 53, 1);
+    h3 {
+        font-size: 2.1rem;
+        // text-shadow: 1px 1px 0px rgba(203, 153, 53, 1);
     }
 
-    h2:after {
+    h3:after {
         content: "";
         /* This is necessary for the pseudo element to work. */
         display: block;
@@ -608,7 +615,7 @@ header.video-header::before {
         /* Change this to whatever width you want. */
         margin-top: 2.5px;
         /* This creates some space between the element and the border. */
-        border-bottom: 2px solid $white;
+        border-bottom: 3px solid $yellow;
         /* This creates the border. Replace black with whatever color you want. */
     }
 
@@ -621,9 +628,60 @@ header.video-header::before {
     }
 }
 
-.contributed {
-    ul {
-        list-style: none;
-        font-size: .95rem;
+
+.section-title {
+    display: inline-block;
+    margin-left: 15px;
+    font-size: 1.3rem;
+    @media screen and (min-width:768px) {
+        font-size: 2.3rem;
     }
 }
+
+.section-title:before,
+.section-title:after {
+    background-color: $yellow;
+    content: "";
+    display: inline-block;
+    height: 3px;
+    position: relative;
+    vertical-align: super;
+    width: 15px;
+}
+
+.section-title:before {
+    top: .05em;
+    right: .50em;
+}
+
+.section-title:after {
+    top: .05em;
+    left: .50em;
+}
+
+h2.section-title {
+    font-size: 2rem;
+    @media screen and (min-width:768px) {
+        font-size: 3rem;
+    }
+}
+
+.project-title {
+    line-height: 1.25;
+}
+
+.my-work {
+    h3 {}
+
+}
+
+.technologies ul {
+    list-style: none;
+    font-size: 1rem;
+    font-family: $freight;
+
+    li {
+        line-height: .9;
+    }
+}
+

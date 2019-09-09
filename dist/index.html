@@ -21,8 +21,11 @@
     <!-- Icons -->
     <link href="../assets/fonts/font-awesome/css/all.min.css" rel="stylesheet" type="text/css" />
     <!-- Stylesheet -->
-    <link rel="stylesheet" href="assets/css/app.min.css">
-    <link rel="stylesheet" href="assets/css/magnific-popup.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.min.css">
+    <!-- build:css -->
+    <link href="../assets/css/app.css" rel="stylesheet" />
+    <link href="../assets/css/magnific-popup.css" rel="stylesheet" />
+    <!-- endbuild -->
     <!-- Typekit font embed -->
     <script src="https://use.typekit.net/owi5wgg.js"></script>
     <script>
@@ -30,9 +33,11 @@
     </script>
 </head>
 
-<body class="home">
+<body class="home bg-white">
     <!-- Navigation -->
-    <div class="menu"> <span></span> </div>
+    <div class="menu-box container-fluid bg-white">
+        <div class="menu-lines"><span></span></div>
+    </div>
     <nav id="nav" class="">
         <ul class="main">
             <li><a href="/#about-me">About Gary</a></li>
@@ -41,13 +46,13 @@
             <li><a href="/the-hq-sessions.html">The HQ Sessions</a></li>
             <li><a href="/br4ss-inc.html">BR4SS Inc</a></li>
         </ul>
-        <div class="menu-nav text-center">
+        <div class="social-nav text-center">
             <!--Linkedin -->
-            <a href="https://www.linkedin.com/in/gandrewnorman">
+            <a href="https://www.linkedin.com/in/gandrewnorman" target="_blank">
                 <i class="fab fa-linkedin-in fa-lg text-white mr-4"> </i>
             </a>
             <!--Instagram-->
-            <a href="https://www.instagram.com/garynormanmedia">
+            <a href="https://www.instagram.com/garynormanmedia" target="_blank">
                 <i class="fab fa-instagram fa-lg text-white"> </i>
             </a>
         </div>
@@ -65,74 +70,111 @@
         </section>
     </header>
     <!-- /Rain Intro -->
+    <!-- Bolt Separator -->
+    <div class="bolt-separator text-center">
+        <a href="#featured-work"><img class="gn-bolt gn-bolt-bounce animated bounce slow" src="../assets/img/logo/gn-bolt-badge.svg" alt="GN-bolt logo"></a>
+    </div>
+    <!-- /Bolt Separator -->
     <!-- Page Content -->
-    <section class="content bolt-bg bg-white py-3">
-        <div class="head-info container text-center col-md-10 col-lg-10 col-xl-8">
-            <h2 class="d-inline-block text-black font-weight-bold py-2 px-3 text-uppercase">Selected Work</h2>
-            <p class="d-inline-block col-lg-10 col-xl-8 mt-0 p-2 font-italic text-black">From design beginnings to leadership roles, here are just a few highlighted accomplishments in my professional timeline. These are the big ones. The stuff you came for. The proof in the proverbial pudding, so to speak.</p>
+    <section id="featured-work" class="content bg-white bolt-bg pt-5">
+        <div class="head-info container-fluid text-right">
+            <div class="col-12">
+                <h2 class="d-inline-block col-12 px-0 text-black font-weight-bold text-uppercase">FEATURED WORK</h2>
+                <p class="d-inline-block col-12 mt-0 px-0 text-black">A collection of my most impressive work to date.</p>
+            </div>
         </div>
-        <div class="container p-0">
+        <div class="container-fluid">
             <div class="row">
-                <div class="portfolio-project col-lg-6 pb-5">
+                <div class="portfolio-project hover-item col-lg-6 p-0 mb-4 mb-md-0">
                     <a href="/the-church-sessions.html">
                         <picture>
                             <source srcset="../assets/img/tcs/tcs-project-image.webp" type="image/webp">
                             <source srcset="../assets/img/tcs/tcs-project-image.jpg" type="image/jpeg">
                             <img class="img-fluid" src="../assets/img/tcs/tcs-project-image.jpg" alt="Alt Text">
                         </picture>
-                        <div class="portfolio-box-caption inside-border-white bg-black p-3">
-                            <div class="project-name text-uppercase"><span>Country Rebel Presents:<br> The Church Sessions</span></div>
-                            <div class="project-roles text-uppercase font-weight-light"><span>Director <strong>/</strong> Producer <strong>/</strong> Editor <strong>/</strong> Audio</span></div>
-                        </div>
+                        <h2 class="hover-overlay">
+                            <span class="project-title-category text-black bg-white px-1 pb-0">VIDEO PRODUCTION 🎬</span><br>
+                            <span class="project-title-roles text-black bg-white px-1 pt-0">Director / Producer / Editor / Audio</span>
+                        </h2>
                     </a>
                 </div>
-                <div class="portfolio-project col-lg-6 pb-5">
+                <div class="portfolio-project hover-item col-lg-6 p-0 mb-4 mb-md-0">
                     <a href="/the-bluestone-sessions.html">
                         <picture>
                             <source srcset="../assets/img/bs/bs-project-image.webp" type="image/webp">
                             <source srcset="../assets/img/bs/bs-project-image.jpg" type="image/jpeg">
                             <img class="img-fluid" src="../assets/img/bs/bs-project-image.jpg" alt="">
                         </picture>
-                        <div class="portfolio-box-caption inside-border-white p-3 bg-black">
-                            <div class="project-name text-uppercase text-white"><span>Country Rebel Presents:<br> The Bluestone Sessions</span></div>
-                            <div class="project-roles text-uppercase text-white font-weight-light"><span>Video Editor <strong>/</strong> Audio mixer</span></div>
-                        </div>
+                        <h2 class="hover-overlay">
+                            <span class="project-title-category text-black bg-white px-1 pb-0">VIDEO PRODUCTION 🎬</span><br>
+                            <span class="project-title-roles text-black bg-white px-1 pt-0">Video Editor / Audio mixer</span>
+                        </h2>
                     </a>
                 </div>
-                <div class="portfolio-project col-lg-6 pb-5">
+            </div>
+            <div class="row">
+                <div class="portfolio-project hover-item col-lg-6 p-0 mb-4 mb-md-0">
                     <a href="/the-hq-sessions.html">
                         <picture>
                             <source srcset="../assets/img/hq/hqs-project-image.webp" type="image/webp">
                             <source srcset="../assets/img/hq/hqs-project-image.jpg" type="image/jpeg">
                             <img class="img-fluid" src="../assets/img/hq/hqs-project-image.jpg" alt="">
                         </picture>
-                        <div class="portfolio-box-caption inside-border-white p-3 bg-black">
-                            <div class="project-name text-uppercase text-white"><span>Country Rebel Presents:<br> The HQ Sessions</span></div>
-                            <div class="project-roles text-uppercase text-white font-weight-light"><span>Director <strong>/</strong> Producer <strong>/</strong> Editor <strong>/</strong> Audio</span></div>
-                        </div>
+                        <h2 class="hover-overlay">
+                            <span class="project-title-category text-black bg-white px-1 pb-0">VIDEO PRODUCTION 🎬</span><br>
+                            <span class="project-title-roles text-black bg-white px-1 pt-0">Director / Producer / Editor / Audio</span>
+                        </h2>
                     </a>
                 </div>
-                <div class="portfolio-project col-lg-6 pb-5">
+                <div class="portfolio-project hover-item col-lg-6 p-0 mb-4 mb-md-0">
+                    <a href="/the-hq-sessions.html">
+                        <picture>
+                            <source srcset="../assets/img/hq/hqs-project-image.webp" type="image/webp">
+                            <source srcset="../assets/img/hq/hqs-project-image.jpg" type="image/jpeg">
+                            <img class="img-fluid" src="../assets/img/hq/hqs-project-image.jpg" alt="">
+                        </picture>
+                        <h2 class="hover-overlay">
+                            <span class="project-title-category text-black bg-white px-1 pb-0">VIDEO PRODUCTION 🎬</span><br>
+                            <span class="project-title-roles text-black bg-white px-1 pt-0">Director / Producer / Editor / Audio</span>
+                        </h2>
+                    </a>
+                </div>
+            </div>
+            <div class="row">
+                <div class="portfolio-project hover-item col-lg-6 p-0 mb-4 mb-md-0">
                     <a href="/br4ss-inc.html">
                         <picture>
                             <source srcset="../assets/img/br4ss/brs-project-image.webp" type="image/webp">
                             <source srcset="../assets/img/br4ss/brs-project-image.jpg" type="image/jpeg">
                             <img class="img-fluid" src="../assets/img/br4ss/brs-project-image.jpg" alt="">
                         </picture>
-                        <div class="portfolio-box-caption inside-border-white p-3 bg-black">
-                            <div class="project-name text-uppercase text-white"><span>BR4SS Inc:<br> Premium Men's Essentials</span></div>
-                            <div class="project-roles text-uppercase text-white font-weight-light"><span>Web Development <strong>/</strong> Web Design <strong>/</strong> Product Design</span></div>
-                        </div>
+                        <h2 class="hover-overlay">
+                            <span class="project-title-category text-black bg-white px-1 pb-0">WEB DESIGN 🖥 📱</span><br>
+                            <span class="project-title-roles text-black bg-white px-1 pt-0">Designer / Developer</span>
+                        </h2>
+                    </a>
+                </div>
+                <div class="portfolio-project hover-item col-lg-6 p-0 mb-4 mb-md-0">
+                    <a href="/br4ss-inc.html">
+                        <picture>
+                            <source srcset="../assets/img/br4ss/brs-project-image.webp" type="image/webp">
+                            <source srcset="../assets/img/br4ss/brs-project-image.jpg" type="image/jpeg">
+                            <img class="img-fluid" src="../assets/img/br4ss/brs-project-image.jpg" alt="">
+                        </picture>
+                        <h2 class="hover-overlay">
+                            <span class="project-title-category text-black bg-white px-1 pb-0">WEB DESIGN 🖥 📱</span><br>
+                            <span class="project-title-roles text-black bg-white px-1 pt-0">Designer / Developer</span>
+                        </h2>
                     </a>
                 </div>
             </div>
         </div>
     </section>
     <section id="about-me" class="about-me bolt-bg bg-yellow">
-        <div class="head-info text-center container-fluid col-md-10 col-lg-10 col-xl-8">
-            <h2 class="d-inline-block text-black font-weight-bold col-12 pt-5 pb-0 px-3 text-uppercase">Hi, I'm Gary</h2>
-            <p class="d-inline-block col-lg-10 col-xl-8 mt-0 p-2 text-black">I’m a digital creative with hard skills in <strong>e-commerce web development, web design, video production pre and post, motion graphics, graphic design, photography, and videography</strong>. Spending years working in diverse teams, I have developed soft skills in <strong>leadership, interpersonal communication, teamwork, adaptability, and problem-solving</strong>. I currently work for Country Rebel as their Creative Team Lead, where I manage a team of video creatives with the mission to create the best acoustic music performance videos on the internet today.</p>
-            <p>I am currently looking for new opportunities. Let's connect!</p>
+        <div class="text-center container col-md-10 col-lg-10 col-xl-8 py-5">
+            <h2 class="text-black font-weight-bold col-12 pb-0 px-3 text-uppercase">Hi, I'm Gary</h2>
+            <p class="d-inline-block col-lg-12 col-xl-10 mt-0 pt-2 px-2 text-black">I’m a digital creative with hard skills in <strong>e-commerce web development, web design, video production pre and post, motion graphics, graphic design, photography, and videography</strong>. Spending years working in diverse teams, I have developed soft skills in <strong>leadership, interpersonal communication, teamwork, adaptability, and problem-solving</strong>.</p>
+            <p>I'm currently looking for new opportunities.</p>
         </div>
     </section>
     <!-- /Page Content -->
@@ -159,7 +201,7 @@
             </ul>
             <div class="row d-flex text-center justify-content-center mb-1">
                 <div class="col-9 col-md-12">
-                    <p class="text-white text-uppercase">Download my resume <a class="text-yellow" href="../assets/img/Gary_Norman_Resume_2019_071719.pdf">here</a></p>
+                    <p class="text-white text-uppercase">Download my resume <a class="text-yellow" href="../assets/img/Gary_Norman_Resume2019.pdf" target="_blank">here</a></p>
                 </div>
             </div>
             <div class="row d-flex text-center justify-content-center mb-3">
@@ -168,17 +210,15 @@
                 </div>
             </div>
             <div class="row pb-3">
-                <div class="footer-socials col-md-12">
-                    <div class="mb-1 text-center">
+                <div class="footer-socials mb-1 text-center col-md-12">
                         <!--Linkedin -->
-                        <a href="https://www.linkedin.com/in/gandrewnorman">
+                        <a href="https://www.linkedin.com/in/gandrewnorman" target="_blank">
                             <i class="fab fa-linkedin-in fa-lg text-white mr-4"> </i>
                         </a>
                         <!--Instagram-->
-                        <a href="https://www.instagram.com/garynormanmedia">
+                        <a href="https://www.instagram.com/garynormanmedia" target="_blank">
                             <i class="fab fa-instagram fa-lg text-white"> </i>
                         </a>
-                    </div>
                 </div>
             </div>
         </div>
@@ -190,8 +230,10 @@
         <!-- Copyright -->
     </footer>
     <!-- /Footer -->
-    <script src="assets/js/vendor/lazy.min.js"></script>
-    <script src="assets/js/vendor/modernizr-custom.min.js"></script>
+    <!-- build:vendor -->
+    <script src="../assets/js/vendor/lazy.js"></script>
+    <script src="../assets/js/vendor/modernizr-custom.js"></script>
+    <!-- endbuild -->
     <!-- Bootstrap core JavaScript
 ================================================== -->
     <script src="../assets/js/vendor/jquery.slim.min.js"></script>
@@ -199,7 +241,9 @@
     <script src="../assets/js/vendor/popper.min.js"></script>
     <script src="../assets/js/vendor/bootstrap.min.js"></script>
     <script src="../assets/js/vendor/bootstrap.bundle.min.js"></script>
-    <script src="assets/js/app.min.js"></script>
+    <!-- build:js -->
+    <script src="../assets/js/app.js"></script>
+    <!-- endbuild -->
 </body>
 
 </html>

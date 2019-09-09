@@ -9,25 +9,25 @@
             init: function() {
                 // Run everywhere.
 
-                /* Modernizer for WebP images in CSS backgrounds ******************************************************************************/
+                /* Modernizer for WebP images in CSS backgrounds ***** https://caniuse.com/#search=webp ************************************************************************/
                 Modernizr.on( 'webp', function( result ) {
                     if ( result ) {
                         // supported browsers
                         $( '.logo' ).toggleClass( 'webp' );
                         $( '.video-header' ).toggleClass( 'webp' );
-                        console.log('supported');
+                        console.log( 'supported' );
 
                     } else {
                         // not-supported browsers
                         $( '.logo' ).toggleClass( 'no-webp' );
                         $( '.video-header' ).toggleClass( 'no-webp' );
-                        console.log('not supported');
+                        console.log( 'not supported' );
                     }
                 } );
 
                 /* Showing Menu  ******************************************************************************/
-                $( '.menu, .overlay' ).click( function() {
-                    $( '.menu' ).toggleClass( 'clicked' );
+                $( '.menu-lines, .overlay' ).click( function() {
+                    $( '.menu-lines' ).toggleClass( 'clicked' );
                     $( '#nav' ).toggleClass( 'show' );
                 } );
 
@@ -70,11 +70,16 @@
                     }
 
                     lastScrollTop = st;
-                }
+                };
 
                 /* MAGNIFIC POPUP CODE *****************************************************************/
                 $( '.portfolio-box' ).magnificPopup( {
                     type: 'iframe',
+                    callbacks: {
+                        beforeOpen: function() {
+                            this.st.iframe.markup = this.st.iframe.markup.replace( 'mfp-iframe-scaler', 'mfp-iframe-scaler animated ' + this.st.el.attr( 'data-effect' ) );
+                        }
+                    },
                     iframe: {
                         patterns: {
                             youtube: {
@@ -84,7 +89,7 @@
                                     if ( !m || !m[ 1 ] ) return null;
                                     return m[ 1 ];
                                 },
-                                src: '//www.youtube.com/embed/%id%?autoplay=1&rel=0'
+                                src: '//www.youtube.com/embed/%id%?autoplay=1'
                             }
                         }
                     }
@@ -116,7 +121,7 @@
                 rainbox.width = window.innerWidth;
                 //creating string for drops
                 var emojidrops = "🎬 🎥 🎵 💧 ⚡ 🌴";
-                //converting the string into an array of single characters
+                //converting the string into an array of single characters and spacing them out
                 emojidrops = emojidrops.split( " " );
                 var font_size = 16;
                 var columns = rainbox.width / font_size; //number of columns for the rain
@@ -127,18 +132,19 @@
                 for ( var x = 0; x < columns; x++ )
                     drops[ x ] = 1;
                 //drawing the characters
+
                 function draw() {
                     //translucent BG to show trail
-                    ctx.fillStyle = "rgba(17, 17, 17, 0.25)";
+                    ctx.fillStyle = "rgba(0, 0, 0, .3)";
                     ctx.fillRect( 0, 0, rainbox.width, rainbox.height );
                     ctx.fillStyle = "#ede9e3"; //@ivory text
                     ctx.font = font_size + "px brandon-grotesque";
                     //looping over drops
                     for ( var i = 0; i < drops.length; i++ ) {
                         //a random emojidrops character to print
-                        var text = emojidrops[ Math.floor( Math.random() * emojidrops.length ) ];
+                        var emoji = emojidrops[ Math.floor( Math.random() * emojidrops.length ) ];
                         //x = i*font_size, y = value of drops[i]*font_size
-                        ctx.fillText( text, i * font_size, drops[ i ] * font_size );
+                        ctx.fillText( emoji, i * font_size, drops[ i ] * font_size );
                         //sending the drop back to the top randomly after it has crossed the screen
                         //adding a randomness to the reset to make the drops scattered on the Y axis
                         if ( drops[ i ] * font_size > rainbox.height && Math.random() > 0.989 )
@@ -149,13 +155,23 @@
                 }
                 setInterval( draw, 66 );
 
+
+
+                $( '.hover-item' ).on( 'mouseenter touchstart', function( e ) {
+                    $( ".hover-item .hover-overlay" ).addClass('hasHover');
+                    e.stopPropagation()
+                } );
+
+                $( '.hover-item' ).on( 'mouseleave', function( e ) {
+                    $( ".hover-item .hover-overlay" ).removeClass('hasHover');
+                } );
+
                 console.log( 'home body fired' );
             }
         },
         tcs: {
             init: function() {
                 // Run on page with body class `tcs`
-
                 console.log( 'tcs fired' );
             }
         },

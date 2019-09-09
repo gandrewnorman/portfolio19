@@ -21,8 +21,11 @@
     <!-- Icons -->
     <link href="../assets/fonts/font-awesome/css/all.min.css" rel="stylesheet" type="text/css" />
     <!-- Stylesheet -->
-    <link rel="stylesheet" href="assets/css/app.min.css">
-    <link rel="stylesheet" href="assets/css/magnific-popup.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.min.css">
+    <!-- build:css -->
+    <link href="../assets/css/app.css" rel="stylesheet" />
+    <link href="../assets/css/magnific-popup.css" rel="stylesheet" />
+    <!-- endbuild -->
     <!-- Typekit font embed -->
     <script src="https://use.typekit.net/owi5wgg.js"></script>
     <script>
@@ -34,12 +37,12 @@
     <!-- Logo -->
     <div class="container">
         <div class="col-8 col-md-4 fixed-top">
-            <a class="logo nav-down" href="/">Gary Norman</a>
+            <a class="logo" href="/">Gary Norman</a>
         </div>
+        <div class="menu-lines"><span></span></div>
     </div>
     <!-- /Logo -->
     <!-- Navigation -->
-    <div class="menu"> <span></span> </div>
     <nav id="nav">
         <ul class="main">
             <li><a href="/#about-me">About Gary</a></li>
@@ -48,22 +51,23 @@
             <li><a href="/the-hq-sessions.html">The HQ Sessions</a></li>
             <li><a href="/br4ss-inc.html">BR4SS Inc</a></li>
         </ul>
-        <div class="menu-nav text-center">
+        <div class="social-nav text-center">
             <!--Linkedin -->
-            <a href="https://www.linkedin.com/in/gandrewnorman">
-                <i class="fab fa-linkedin-in fa-lg text-white mr-4"> </i>
+            <a href="https://www.linkedin.com/in/gandrewnorman" target="_blank">
+                <i class="fab fa-linkedin-in fa-lg text-white mr-4"></i>
             </a>
             <!--Instagram-->
-            <a href="https://www.instagram.com/garynormanmedia">
-                <i class="fab fa-instagram fa-lg text-white"> </i>
+            <a href="https://www.instagram.com/garynormanmedia" target="_blank">
+                <i class="fab fa-instagram fa-lg text-white"></i>
             </a>
         </div>
     </nav>
     <!-- /Navigation -->
-    <!-- Header Video ---------------------------------------------------------------->
+    <!-- Video Header -->
     <header class="video-header">
-        <video playsinline="playsinline" autoplay="autoplay" muted="muted" loop="loop">
+        <video preload="auto" playsinline="playsinline" autoplay="autoplay" muted="muted" loop="loop">
             <source src="../assets/img/videos/tcs-sizzle.mp4" type="video/mp4">
+            Sorry, your browser doesn't support embedded videos.
         </video>
         <div class="container h-100">
             <div class="d-flex h-100 text-center align-items-center">
@@ -79,13 +83,13 @@
     </header>
     <!-- /Video Header -->
     <!-- Project Roles -->
-    <section class="content">
-        <div class="roles p-2 d-flex h-100 text-center text-uppercase align-items-center text-small bg-black">
-            <div class="container">
+    <section>
+        <div class="roles p-1 d-flex h-100 text-center text-uppercase align-items-center text-small bg-black">
+            <div class="container p-0">
                 <div class="row">
-                    <h2 class="w-100 font-weight-bold text-yellow">Roles</h2>
+                    <h3 class="w-100 font-weight-bold text-white">Roles</h3>
                 </div>
-                <ul class="row p-0 font-weight-light text-white">
+                <ul class="row p-0 text-white">
                     <li class="col-sm">
                         Director
                     </li>
@@ -103,55 +107,55 @@
         </div>
     </section>
     <!-- /Project Roles -->
-    <!-- Portfolio Info -->
-    <section class="content py-4 bolt-bg bg-white">
+    <!-- Project Info -->
+    <section class="py-4 bolt-bg bg-black">
         <div class="container">
             <div class="row">
                 <!-- Project Details Section -->
-                <div class="col-md-6 col-lg-4">
-                    <h3 class="mb-2 text-uppercase"><strong>Project</strong></h3>
-                    <p class="d-inline-block mt-0 p-2 font-italic text-uppercase text-yellow bg-black">"The Church Sessions"<br> Acoustic Recording Sessions</p>
-                    <p class="font-weight-light">32 Artists, 4 Days, 1 Historic Location.</p>
-                    <p>Country Rebel welcomed 32 of the most promising and talented country music artists to the century-old Nashville Vineyard Church to record some of the most stunning acoustic footage the company has ever seen. Filmed during the annual Country Radio Seminar Week in Nashville, a small and nimble team of highly-skilled videographers and sound technicians were able to capture more than 115 individual songs throughout the four days.</p>
+                <div class="project-details mb-3 col-lg-4">
+                    <h3 class="section-title col-12 px-0 mb-2 text-uppercase text-white"><strong>Project</strong></h3>
+                    <p class="project-title d-inline-block mt-0 py-2 font-italic text-white">"The Church Sessions"<br> Acoustic Recording Sessions</p>
+                    <p class="font-weight-light text-yellow">32 Artists, 4 Days, 1 Historic Location.</p>
+                    <p class="text-white">Country Rebel welcomed 32 of the most promising and talented country music artists to the century-old Nashville Vineyard Church to record some of the most stunning acoustic footage the company has ever seen. Filmed during the annual Country Radio Seminar Week in Nashville, a small and nimble team of highly-skilled videographers and sound technicians were able to capture more than 115 individual songs throughout the four days.</p>
                 </div>
                 <!-- /Project Details Section -->
                 <!-- Project Playlist Video Section -->
-                <div class="col-md-6 col-lg-8">
+                <div class="project-playlist col-lg-8">
                     <div class="embed-responsive embed-responsive-16by9 shadow">
                         <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/?listType=playlist&list=PLxOnc_3xS0NpxmSCMZE7hPo1tq1NB5hHI&index=0" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
                     </div>
-                    <p class="text-center">Click Above For Full Session Playlist</p>
+                    <p class="text-center text-white">Click Above For Full Session Playlist</p>
                 </div>
                 <!-- /Project Playlist Video Section -->
             </div>
         </div>
+        <!-- /Project Info -->
+        <!-- What I Worked On Section -->
         <div class="container">
-            <!-- /row -->
-            <!-- My Contributions Section -->
             <div class="row mb-3">
-                <div class="col-12 col-md-10 contributed">
-                    <h3 class="mt-1 mb-0 text-uppercase"><strong>What I Worked On</strong></h3>
-                    <p class="p-0 mb-2">Leading the pack, I held a key role in ensuring the recording sessions kept moving - just like clockwork. As the production manager, I outfitted the entire team and crew with all needed equipment whether from our  setup or rented from a production house. Taking the role of director came naturally to me and every piece of the set, camera equipment, lighting, and data ingestion ran as smooth as butter. Tasked with optimizing microphone positioning, I also absorbed the duties of the on-set audio engineer. All combined, these three pivotal roles required a clear mind and active engagement in each part of the production.</p>
-                    <p class="p-0 mb-0">Within post-production, I supervised two separate editors to maintain our high standards and commitment to quality for all deliverables. While supervising, I also prepared the content and YouTube channel for the future launch, for each video was an integral and time-sensitive part of our overall outward marketing push. This held elements of project management, quality assurance, and skilled communication when working with talent management contacts.</p>
+                <div class="col-lg-10 mt-4 mt-md-1 mb-2 my-work text-white">
+                    <h3 class="section-title text-uppercase"><strong>What I Worked On</strong></h3>
+                    <p class="p-0 mb-2">Leading the pack, I held a key role in ensuring the recording sessions kept moving - just like clockwork. As the production manager, I outfitted the entire team and crew with all needed equipment whether from our setup or rented from a production house. Taking the role of director came naturally to me and every piece of the set, camera equipment, lighting, and data ingestion ran as smooth as butter. Tasked with optimizing microphone positioning, I also absorbed the duties of the on-set audio engineer. All combined, these three pivotal roles required a clear mind and active engagement in each part of the production.</p>
+                    <p class="p-0 mb-2">Within post-production, I supervised two separate editors to maintain our high standards and commitment to quality for all deliverables. While supervising, I also prepared the content and YouTube channel for the future launch, for each video was an integral and time-sensitive part of our overall outward marketing push. This held elements of project management, quality assurance, and skilled communication when working with talent management contacts.</p>
                 </div>
             </div>
             <!-- /row -->
-            <!-- /My Contributions Section -->
+            <!-- /What I Worked On Section -->
             <!-- Technologies Section -->
-            <div class="row mb-3">
-                <div class="col-12 col-lg-10 contributed text-uppercase">
-                    <h3 class="mt-1 mb-2"><strong>Technologies Used</strong></h3>
-                    <ul class="row mb-0 pl-0">
+            <div class="row mb-4">
+                <div class="col-12 col-lg-10 mt-4 mt-md-1 mb-2 technologies">
+                    <h3 class="section-title text-white text-uppercase"><strong>Technologies Used</strong></h3>
+                    <ul class="row mb-0 pl-0 text-yellow">
                         <li class="col-sm-4">Premiere Pro</li>
                         <li class="col-sm-4">Audition</li>
                         <li class="col-sm-4">DaVinci Resolve</li>
                     </ul>
-                    <ul class="row mb-0 pl-0">
+                    <ul class="row mb-0 pl-0 text-yellow">
                         <li class="col-sm-4">Photoshop</li>
                         <li class="col-sm-4">Illustrator</li>
                         <li class="col-sm-4">Frame.io</li>
                     </ul>
-                    <ul class="row mb-0 pl-0">
+                    <ul class="row mb-0 pl-0 text-yellow">
                         <li class="col-sm-4">Monday.com</li>
                     </ul>
                 </div>
@@ -159,38 +163,38 @@
             <!-- /row -->
             <!-- /Technologies Section -->
             <!-- YouTube Favorites Section -->
-            <div class="row">
-                <div class="col-12">
-                    <h3 class="mt-1 mb-3 text-uppercase"><strong>YouTube Favorites</strong></h3>
+            <div class="row mb-3">
+                <div class="col-12 mt-4 mt-md-1 mb-3">
+                    <h3 class="section-title text-uppercase text-white"><strong>YouTube Favorites</strong></h3>
                 </div>
-                <div class="col-sm-6 mb-4">
-                    <a href="https://www.youtube.com/watch?v=TcxdxD01K2Q?autoplay=1&rel=0" class="portfolio-box hover shadow">
+                <div class="col-md-6 mb-4">
+                    <a href="https://www.youtube.com/watch?v=TcxdxD01K2Q?autoplay=1" class="portfolio-box hover shadow" data-effect="fadeInDown">
                         <picture>
-                            <img class="img-fluid lazy" src="https://placehold.it/1920x1080" data-src="/assets/img/tcs/Cody-Johnson-Fenceposts-thumbnail.jpg" data-srcset="/assets/img/tcs/Cody-Johnson-Fenceposts-thumbnail.jpg 1x" alt="Video Link to Cody Johnson's performance of Fenceposts"/>
+                            <img class="img-fluid lazy" src="https://placehold.it/1920x1080" data-src="/assets/img/tcs/Cody-Johnson-Fenceposts-thumbnail.jpg" data-srcset="/assets/img/tcs/Cody-Johnson-Fenceposts-thumbnail.jpg 1x" alt="Video Link to Cody Johnson's performance of Fenceposts" />
                         </picture>
                     </a>
                 </div>
-                <div class="col-sm-6 mb-4">
-                    <a href="https://www.youtube.com/watch?v=KY8Xsm6DA0o?autoplay=1&rel=0" class="portfolio-box hover shadow">
+                <div class="col-md-6 mb-4">
+                    <a href="https://www.youtube.com/watch?v=KY8Xsm6DA0o?autoplay=1" class="portfolio-box hover shadow" data-effect="fadeInDown">
                         <picture>
-                            <img class="img-fluid lazy" src="https://placehold.it/1920x1080" data-src="/assets/img/tcs/Love-and-Theft--Whiskey-On-My-Breath-thumbnail.jpg" data-srcset="/assets/img/tcs/Love-and-Theft--Whiskey-On-My-Breath-thumbnail.jpg 1x" alt="Video Link to Love and Theft's performance of Whiskey On My Breath"/>
+                            <img class="img-fluid lazy" src="https://placehold.it/1920x1080" data-src="/assets/img/tcs/Love-and-Theft--Whiskey-On-My-Breath-thumbnail.jpg" data-srcset="/assets/img/tcs/Love-and-Theft--Whiskey-On-My-Breath-thumbnail.jpg 1x" alt="Video Link to Love and Theft's performance of Whiskey On My Breath" />
                         </picture>
                     </a>
                 </div>
             </div>
             <!-- /row -->
             <div class="row">
-                <div class="col-sm-6 mb-4">
-                    <a href="https://www.youtube.com/watch?v=gxrblK9vfvQ?autoplay=1&rel=0" class="portfolio-box hover shadow">
+                <div class="col-md-6 mb-4">
+                    <a href="https://www.youtube.com/watch?v=gxrblK9vfvQ?autoplay=1" class="portfolio-box hover shadow" data-effect="fadeInDown">
                         <picture>
-                            <img class="img-fluid lazy" src="https://placehold.it/1920x1080" data-src="/assets/img/tcs/Home-Free--Go-Rest-High-On-That-Mountain-thumbnail.jpg" data-srcset="/assets/img/tcs/Home-Free--Go-Rest-High-On-That-Mountain-thumbnail.jpg 1x" alt="Video Link to Home Free's performance of Go Rest Hight On That Mountain"/>
+                            <img class="img-fluid lazy" src="https://placehold.it/1920x1080" data-src="/assets/img/tcs/Home-Free--Go-Rest-High-On-That-Mountain-thumbnail.jpg" data-srcset="/assets/img/tcs/Home-Free--Go-Rest-High-On-That-Mountain-thumbnail.jpg 1x" alt="Video Link to Home Free's performance of Go Rest Hight On That Mountain" />
                         </picture>
                     </a>
                 </div>
-                <div class="col-sm-6 mb-4">
-                    <a href="https://www.youtube.com/watch?v=Nix83cAfcE4?autoplay=1&rel=0" class="portfolio-box hover shadow">
+                <div class="col-md-6 mb-4">
+                    <a href="https://www.youtube.com/watch?v=Nix83cAfcE4?autoplay=1" class="portfolio-box hover shadow" data-effect="fadeInDown">
                         <picture>
-                            <img class="img-fluid lazy" src="https://placehold.it/1920x1080" data-src="/assets/img/tcs/Gretchen-and-Jessie-G-Dreamboat-Annie-thumbnail.jpg" data-srcset="/assets/img/tcs/Gretchen-and-Jessie-G-Dreamboat-Annie-thumbnail.jpg 1x" alt="Video Link to Gretchen Wilson and Jessie G.'s performance of Dreamboat Annie"/>
+                            <img class="img-fluid lazy" src="https://placehold.it/1920x1080" data-src="/assets/img/tcs/Gretchen-and-Jessie-G-Dreamboat-Annie-thumbnail.jpg" data-srcset="/assets/img/tcs/Gretchen-and-Jessie-G-Dreamboat-Annie-thumbnail.jpg 1x" alt="Video Link to Gretchen Wilson and Jessie G.'s performance of Dreamboat Annie" />
                         </picture>
                     </a>
                 </div>
@@ -199,8 +203,8 @@
             <!-- /YouTube Favorites Section -->
             <!-- Project Stills Section -->
             <div class="row">
-                <div class="col-12">
-                    <h3 class="mt-1 mb-0 text-uppercase"><strong>Project Stills</strong></h3>
+                <div class="col-12 mt-4 mt-md-1 mt-1 mb-2">
+                    <h3 class="section-title text-uppercase text-white"><strong>Project Stills</strong></h3>
                 </div>
                 <div class="container">
                     <div class="row pt-2">
@@ -307,7 +311,7 @@
             </ul>
             <div class="row d-flex text-center justify-content-center mb-1">
                 <div class="col-9 col-md-12">
-                    <p class="text-white text-uppercase">Download my resume <a class="text-yellow" href="../assets/img/Gary_Norman_Resume_2019_071719.pdf">here</a></p>
+                    <p class="text-white text-uppercase">Download my resume <a class="text-yellow" href="../assets/img/Gary_Norman_Resume2019.pdf" target="_blank">here</a></p>
                 </div>
             </div>
             <div class="row d-flex text-center justify-content-center mb-3">
@@ -317,17 +321,15 @@
             </div>
             <!-- /row -->
             <div class="row pb-3">
-                <div class="footer-socials col-md-12">
-                    <div class="mb-1 text-center">
+                <div class="footer-socials mb-1 text-center col-md-12">
                         <!--Linkedin -->
-                        <a href="https://www.linkedin.com/in/gandrewnorman">
+                        <a href="https://www.linkedin.com/in/gandrewnorman" target="_blank">
                             <i class="fab fa-linkedin-in fa-lg text-white mr-4"> </i>
                         </a>
                         <!--Instagram-->
-                        <a href="https://www.instagram.com/garynormanmedia">
+                        <a href="https://www.instagram.com/garynormanmedia" target="_blank">
                             <i class="fab fa-instagram fa-lg text-white"> </i>
                         </a>
-                    </div>
                 </div>
             </div>
             <!-- /row -->
@@ -353,8 +355,10 @@
         document.getElementById(imgName).style.display = "block";
     }
     </script>
-    <script src="assets/js/vendor/lazy.min.js"></script>
-    <script src="assets/js/vendor/modernizr-custom.min.js"></script>
+    <!-- build:vendor -->
+    <script src="../assets/js/vendor/lazy.js"></script>
+    <script src="../assets/js/vendor/modernizr-custom.js"></script>
+    <!-- endbuild -->
     <!-- Bootstrap core JavaScript
 ================================================== -->
     <script src="../assets/js/vendor/jquery.slim.min.js"></script>
@@ -362,7 +366,9 @@
     <script src="../assets/js/vendor/popper.min.js"></script>
     <script src="../assets/js/vendor/bootstrap.min.js"></script>
     <script src="../assets/js/vendor/bootstrap.bundle.min.js"></script>
-    <script src="assets/js/app.min.js"></script>
+    <!-- build:js -->
+    <script src="../assets/js/app.js"></script>
+    <!-- endbuild -->
 </body>
 
 </html>

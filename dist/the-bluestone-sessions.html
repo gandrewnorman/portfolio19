@@ -21,8 +21,11 @@
     <!-- Icons -->
     <link href="../assets/fonts/font-awesome/css/all.min.css" rel="stylesheet" type="text/css" />
     <!-- Stylesheet -->
-    <link rel="stylesheet" href="assets/css/app.min.css">
-    <link rel="stylesheet" href="assets/css/magnific-popup.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.min.css">
+    <!-- build:css -->
+    <link href="../assets/css/app.css" rel="stylesheet" />
+    <link href="../assets/css/magnific-popup.css" rel="stylesheet" />
+    <!-- endbuild -->
     <!-- Typekit font embed -->
     <script src="https://use.typekit.net/owi5wgg.js"></script>
     <script>
@@ -36,10 +39,10 @@
         <div class="col-8 col-md-4 fixed-top">
             <a class="logo" href="/">Gary Norman</a>
         </div>
+        <div class="menu-lines"><span></span></div>
     </div>
     <!-- /Logo -->
     <!-- Navigation -->
-    <div class="menu"> <span></span> </div>
     <nav id="nav">
         <ul class="main">
             <li><a href="/#about-me">About Gary</a></li>
@@ -48,7 +51,7 @@
             <li><a href="/the-hq-sessions.html">The HQ Sessions</a></li>
             <li><a href="/br4ss-inc.html">BR4SS Inc</a></li>
         </ul>
-        <div class="menu-nav text-center">
+        <div class="social-nav text-center">
             <!--Linkedin -->
             <a href="https://www.linkedin.com/in/gandrewnorman">
                 <i class="fab fa-linkedin-in fa-lg text-white mr-4"> </i>
@@ -62,8 +65,9 @@
     <!-- /Navigation -->
     <!-- Video Header -->
     <header class="video-header">
-        <video playsinline="playsinline" autoplay="autoplay" muted="muted" loop="loop">
+        <video preload="auto" playsinline="playsinline" autoplay="autoplay" muted="muted" loop="loop">
             <source src="../assets/img/videos/bs-sizzle.mp4" type="video/mp4">
+            Sorry, your browser doesn't support embedded videos.
         </video>
         <div class="container h-100">
             <div class="d-flex h-100 text-center align-items-center">
@@ -79,100 +83,109 @@
     </header>
     <!-- /Video Header -->
     <!-- Project Roles -->
-    <section class="content">
-        <div class="roles p-2 d-flex h-100 text-center text-uppercase align-items-center text-small bg-black">
-            <div class="container">
+    <section>
+        <div class="roles p-1 d-flex h-100 text-center text-uppercase align-items-center text-small bg-black">
+            <div class="container p-0">
                 <div class="row">
-                    <h2 class="w-100 font-weight-bold text-yellow">Roles</h2>
+                    <h3 class="w-100 font-weight-bold text-white">Roles</h3>
                 </div>
                 <!-- /row -->
-                <ul class="row p-0 font-weight-light text-white">
-                    <li class="col-sm">
+                <ul class="row p-0 text-white">
+                    <li class="col-12 col-sm-4 col-md-3 offset-sm-2 offset-md-3">
                         Editor
                     </li>
-                    <li class="col-sm">
+                    <li class="col-12 col-sm-4 col-md-3">
                         Audio Mixer
                     </li>
                 </ul>
             </div>
         </div>
     </section>
-    <!-- /content -->
     <!-- /Project Roles -->
     <!-- Portfolio Info -->
-    <section class="content py-4 bolt-bg bg-white">
+    <section class="py-4 bolt-bg bg-black">
         <div class="container">
             <div class="row">
                 <!-- Project Details Section -->
-                <div class="col-md-6 col-lg-4">
-                    <h3 class="mb-2 text-uppercase"><strong>Project</strong></h3>
-                    <p class="d-inline-block mt-0 p-2 font-italic text-uppercase text-yellow bg-black">"The Bluestone Sessions"<br> Acoustic Recording Sessions</p>
-                    <p class="font-weight-light">2 Artists. 8 Songs. Epic Results.</p>
-                    <p>In 2017, Country Rebel met Drake White and Aaron Lewis in Columbus, Ohio on separate occasions to film, what would later be called "The Bluestone Sessions." With cathedral ceilings and soulful acoustics that can only be experienced in a 115-year-old church, The Bluestone was the perfect location to record two of country music's most expressive artists.</p>
+                <div class="project-details mb-3 col-lg-4">
+                    <h3 class="section-title col-12 px-0 mb-2 text-uppercase text-white"><strong>Project</strong></h3>
+                    <p class="project-title d-inline-block mt-0 py-2 font-italic text-white">"The Bluestone Sessions"<br> Acoustic Recording Sessions</p>
+                    <p class="font-weight-light text-yellow">2 Artists. 8 Songs. Epic Results.</p>
+                    <p class="text-white">In 2017, Country Rebel met Drake White and Aaron Lewis in Columbus, Ohio on separate occasions to film, what would later be called "The Bluestone Sessions."</p>
+                    <p class="text-white">With cathedral ceilings and soulful acoustics that can only be experienced in a 115-year-old church, The Bluestone was the perfect location to record two of country music's most expressive artists.</p>
                 </div>
                 <!-- /Project Details Section -->
                 <!-- Project Playlist Video Section -->
-                <div class="col-md-6 col-lg-8">
+                <div class="project-playlist col-lg-8">
                     <div class="embed-responsive embed-responsive-16by9 shadow">
                         <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/?listType=playlist&list=PLxOnc_3xS0Npybof8ARfXrGBcAtCqDeNa&index=1&modestbranding=1" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
                     </div>
-                    <p class="text-center">Click Above For Full Session Playlist</p>
+                    <p class="text-center text-white">Click Above For Full Session Playlist</p>
                 </div>
                 <!-- /Project Playlist Video Section -->
             </div>
-            <!-- /row -->
-            <!-- My Contributions Section -->
-            <div class="row mb-3">
-                <div class="col-12 col-md-8 contributed">
-                    <h3 class="mt-1 mb-0 text-uppercase"><strong>What I Worked On</strong></h3>
-                    <p class="p-0 mb-2">I was responsible for editing the footage that the hired production team shot. This was something new for me because I wasn’t accustomed to editing live performances or even acoustic music for that matter. These went on to become some of the most viewed videos we have on YouTube accumulating more than 24 million views and earning us a YouTube Creator Award for gaining 100k subscribers.</p>
-                    <!-- Technologies Section -->
-                    <div class="row mb-3">
-                        <div class="col-12 col-lg-10 contributed text-uppercase">
-                            <h3 class="mt-1 mb-2"><strong>Technologies Used</strong></h3>
-                            <ul class="row mb-0 pl-0">
-                                <li class="col-sm-4">Premiere Pro</li>
-                                <li class="col-sm-4">Audition</li>
-                            </ul>
-                            <ul class="row mb-0 pl-0">
-                                <li class="col-sm-4">Photoshop</li>
-                                <li class="col-sm-4">Illustrator</li>
-                            </ul>
-                        </div>
-                    </div>
-                    <!-- /row -->
-                    <!-- /Technologies Section -->
-                </div>
-                <div class="col-10 offset-1 col-md-4 offset-md-0">
-                    <picture>
-                        <img class="img-fluid lazy shadow" src="https://placehold.it/757x924" data-src="/assets/img/Creator-Award-sm.png" data-srcset="/assets/img/Creator-Award-sm.png 1x" alt="Country Rebel YouTube Creator Award"/>
-                    </picture>
-                </div>
-            </div>
-            <!-- /row -->
-            <!-- /My Contributions Section -->
-            <!-- YouTube Favorites Section -->
+        </div>
+        <!-- /row -->
+        <!-- What I Worked On Section -->
+        <div class="container">
             <div class="row">
-                <div class="col-12">
-                    <h3 class="mt-1 mb-3 text-uppercase"><strong>YouTube Favorites</strong></h3>
+                <div class="col-lg-10 mt-4 mt-md-1 mb-3 my-work text-white">
+                    <h3 class="section-title text-uppercase"><strong>What I Worked On</strong></h3>
+                    <p class="p-0">I was responsible for editing the footage that the hired production team shot. This was something new for me because I wasn’t accustomed to editing live performances or even acoustic music for that matter. These went on to become some of the most viewed videos we have on YouTube accumulating more than 24 million views and earning us a Silver YouTube Creator Award for passing 100k subscribers.</p>
+                    <!-- /What I Worked On Section -->
                 </div>
-                <div class="col-sm-6 mb-4">
-                    <a href="https://www.youtube.com/watch?v=t5THbA_MLLc?autoplay=1&rel=0" class="portfolio-box hover shadow">
+            </div>
+            <div class="row mb-4">
+                <!-- Creator Award Section -->
+                <div class="col-8 col-lg-6 offset-2 offset-lg-0 order-lg-2 mb-md-4 mb-lg-0">
+                    <a href="https://www.youtube.com/countryrebel" target="_blank">
+                    <picture>
+                        <img class="creator-img img-fluid lazy shadow" src="https://placehold.it/757x924" data-src="/assets/img/Creator-Award-sm.png" data-srcset="/assets/img/Creator-Award-sm.png 1x" alt="Country Rebel YouTube Creator Award" />
+                    </picture>
+                    </a>
+                </div>
+                <!-- /Creator Award Section -->
+                <!-- Technologies Section -->
+                <div class="col-12 col-lg-6 order-lg-1 technologies mt-4 mt-md-1">
+                    <h3 class="section-title text-white text-uppercase"><strong>Technologies Used</strong></h3>
+                    <ul class="row mb-0 pl-0 text-yellow">
+                        <li class="col-6 col-sm-4">Premiere Pro</li>
+                        <li class="col-6 col-sm-4">Audition</li>
+                    </ul>
+                    <ul class="row mb-0 pl-0 text-yellow">
+                        <li class="col-6 col-sm-4">Photoshop</li>
+                        <li class="col-6 col-sm-4">Illustrator</li>
+                    </ul>
+                </div>
+                <!-- /Technologies Section -->
+            </div>
+            <!-- /row -->
+        </div>
+        <!-- /container -->
+        <!-- YouTube Favorites Section -->
+        <div class="container">
+            <div class="row mb-3">
+                <div class="col-12 mt-2 mt-md-1 mb-3">
+                    <h3 class="section-title text-uppercase text-white"><strong>YouTube Favorites</strong></h3>
+                </div>
+                <div class="col-md-6 mb-4">
+                    <a href="https://www.youtube.com/watch?v=t5THbA_MLLc?autoplay=1&rel=0" class="portfolio-box hover shadow" data-effect="fadeInDown">
                         <picture>
-                            <img class="img-fluid lazy" src="https://placehold.it/1920x1080" data-src="/assets/img/bs/Aaron-Lewis--Lost-and-Lonely--Bluestone--thumbnail.jpg" data-srcset="/assets/img/bs/Aaron-Lewis--Lost-and-Lonely--Bluestone--thumbnail.jpg 1x" alt="Video Link to Aaron Lewis' performance of Lost And Lonely"/>
+                            <img class="img-fluid lazy" src="https://placehold.it/1920x1080" data-src="/assets/img/bs/Aaron-Lewis--Lost-and-Lonely--Bluestone--thumbnail.jpg" data-srcset="/assets/img/bs/Aaron-Lewis--Lost-and-Lonely--Bluestone--thumbnail.jpg 1x" alt="Video Link to Aaron Lewis' performance of Lost And Lonely" />
                         </picture>
                     </a>
                 </div>
-                <div class="col-sm-6 mb-4">
-                    <a href="https://www.youtube.com/watch?v=tigB0lFHa7M?autoplay=1&rel=0" class="portfolio-box hover shadow">
+                <div class="col-md-6 mb-4">
+                    <a href="https://www.youtube.com/watch?v=tigB0lFHa7M?autoplay=1&rel=0" class="portfolio-box hover shadow" data-effect="fadeInDown">
                         <picture>
-                            <img class="img-fluid lazy" src="https://placehold.it/1920x1080" data-src="/assets/img/bs/Drake-White--Can't-You-See--Bluestone--thumbnail.jpg" data-srcset="/assets/img/bs/Drake-White--Can't-You-See--Bluestone--thumbnail.jpg 1x" alt="Video Link to Drake White's cover performance of Can't You See by Marshall Tucker Band"/>
+                            <img class="img-fluid lazy" src="https://placehold.it/1920x1080" data-src="/assets/img/bs/Drake-White--Can't-You-See--Bluestone--thumbnail.jpg" data-srcset="/assets/img/bs/Drake-White--Can't-You-See--Bluestone--thumbnail.jpg 1x" alt="Video Link to Drake White's cover performance of Can't You See by Marshall Tucker Band" />
                         </picture>
                     </a>
                 </div>
             </div>
-            <!-- /row -->
-            <!-- /YouTube Favorites Section -->
+        </div>
+        <!-- /row -->
+        <!-- /YouTube Favorites Section -->
     </section>
     <!-- /content -->
     <!-- Footer -->
@@ -198,7 +211,7 @@
             </ul>
             <div class="row d-flex text-center justify-content-center mb-1">
                 <div class="col-9 col-md-12">
-                    <p class="text-white text-uppercase">Download my resume <a class="text-yellow" href="../assets/img/Gary_Norman_Resume_2019_071719.pdf">here</a></p>
+                    <p class="text-white text-uppercase">Download my resume <a class="text-yellow" href="../assets/img/Gary_Norman_Resume2019.pdf" target="_blank">here</a></p>
                 </div>
             </div>
             <div class="row d-flex text-center justify-content-center mb-3">
@@ -207,17 +220,15 @@
                 </div>
             </div>
             <div class="row pb-3">
-                <div class="footer-socials col-md-12">
-                    <div class="mb-1 text-center">
+                <div class="footer-socials mb-1 text-center col-md-12">
                         <!--Linkedin -->
-                        <a href="https://www.linkedin.com/in/gandrewnorman">
+                        <a href="https://www.linkedin.com/in/gandrewnorman" target="_blank">
                             <i class="fab fa-linkedin-in fa-lg text-white mr-4"> </i>
                         </a>
                         <!--Instagram-->
-                        <a href="https://www.instagram.com/garynormanmedia">
+                        <a href="https://www.instagram.com/garynormanmedia" target="_blank">
                             <i class="fab fa-instagram fa-lg text-white"> </i>
                         </a>
-                    </div>
                 </div>
             </div>
         </div>
@@ -229,8 +240,10 @@
         <!-- Copyright -->
     </footer>
     <!-- /Footer -->
-   <script src="assets/js/vendor/lazy.min.js"></script>
-   <script src="assets/js/vendor/modernizr-custom.min.js"></script>
+    <!-- build:vendor -->
+    <script src="../assets/js/vendor/lazy.js"></script>
+    <script src="../assets/js/vendor/modernizr-custom.js"></script>
+    <!-- endbuild -->
     <!-- Bootstrap core JavaScript
 ================================================== -->
     <script src="../assets/js/vendor/jquery.slim.min.js"></script>
@@ -238,7 +251,9 @@
     <script src="../assets/js/vendor/popper.min.js"></script>
     <script src="../assets/js/vendor/bootstrap.min.js"></script>
     <script src="../assets/js/vendor/bootstrap.bundle.min.js"></script>
-    <script src="assets/js/app.min.js"></script>
+    <!-- build:js -->
+    <script src="../assets/js/app.js"></script>
+    <!-- endbuild -->
 </body>
 
 </html>
