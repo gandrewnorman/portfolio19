@@ -102,6 +102,35 @@
                     }
                 } );
 
+                /* CHECK IF IN VIEW AND ANIMATE  ******************************************************************************/
+                var $animation_elements = $( '.animation-element' );
+                var $window = $( window );
+
+                function check_if_in_view() {
+                    var window_height = $window.height();
+                    var window_top_position = $window.scrollTop();
+                    var window_bottom_position = ( window_top_position + window_height );
+
+                    $.each( $animation_elements, function() {
+                        var $element = $( this );
+                        var element_height = $element.outerHeight();
+                        var element_top_position = $element.offset().top;
+                        var element_bottom_position = ( element_top_position + element_height );
+                        //check to see if this current container is within viewport
+                        if ( ( element_bottom_position >= window_top_position ) &&
+                            ( element_top_position <= window_bottom_position ) ) {
+                            $element.removeClass( 'invisible' );
+                            $element.addClass( 'in-view' );
+                        } else {
+                            $element.addClass( 'invisible' );
+                            $element.removeClass( 'in-view' );
+                        }
+                    } );
+                }
+
+                $window.on( 'scroll resize', check_if_in_view );
+                $window.trigger( 'scroll' );
+
                 console.log( 'common fired' );
             },
             finalize: function() {
@@ -155,15 +184,49 @@
                 }
                 setInterval( draw, 66 );
 
-
-
+                /* HOVERING ON TOUCH   ******************************************************************************/
                 $( '.hover-item' ).on( 'mouseenter touchstart', function( e ) {
-                    $( ".hover-item .hover-overlay" ).addClass('hasHover');
+                    $( ".hover-item .hover-overlay" ).addClass( 'hasHover' );
                     e.stopPropagation()
                 } );
 
                 $( '.hover-item' ).on( 'mouseleave', function( e ) {
-                    $( ".hover-item .hover-overlay" ).removeClass('hasHover');
+                    $( ".hover-item .hover-overlay" ).removeClass( 'hasHover' );
+                } );
+
+                /* REPLACE ALL SVG IMAGES WITH INLINE SVG  ******************************************************************************/
+                $( 'img.svg' ).each( function() {
+                    var $img = $( this );
+                    var imgID = $img.attr( 'id' );
+                    var imgClass = $img.attr( 'class' );
+                    var imgURL = $img.attr( 'src' );
+
+                    $.get( imgURL, function( data ) {
+                        // Get the SVG tag, ignore the rest
+                        var $svg = $( data ).find( 'svg' );
+
+                        // Add replaced image's ID to the new SVG
+                        if ( typeof imgID !== 'undefined' ) {
+                            $svg = $svg.attr( 'id', imgID );
+                        }
+                        // Add replaced image's classes to the new SVG
+                        if ( typeof imgClass !== 'undefined' ) {
+                            $svg = $svg.attr( 'class', imgClass );
+                        }
+
+                        // Remove any invalid XML tags as per http://validator.w3.org
+                        $svg = $svg.removeAttr( 'xmlns:a' );
+
+                        // Check if the viewport is set, if the viewport is not set the SVG wont't scale.
+                        if ( !$svg.attr( 'viewBox' ) && $svg.attr( 'height' ) && $svg.attr( 'width' ) ) {
+                            $svg.attr( 'viewBox', '0 0 ' + $svg.attr( 'height' ) + ' ' + $svg.attr( 'width' ) );
+                        }
+
+                        // Replace image with new SVG
+                        $img.replaceWith( $svg );
+
+                    }, 'xml' );
+
                 } );
 
                 console.log( 'home body fired' );
