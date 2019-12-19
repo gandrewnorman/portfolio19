@@ -489,7 +489,7 @@ h1.logo.webp {
     left: 0;
     background-image: url("/assets/img/logo/logo.webp");
     font-size: 0px;
-    background-position: 40% 50%;
+    background-position: 40% 40%;
     background-size: contain;
     background-repeat: no-repeat;
     margin: auto 5%;
@@ -504,7 +504,7 @@ h1.logo.no-webp {
     left: 0;
     background-image: url("/assets/img/logo/logo.png");
     font-size: 0px;
-    background-position: 40% 50%;
+    background-position: 40% 40%;
     background-size: contain;
     background-repeat: no-repeat;
     margin: auto 5%;
@@ -591,55 +591,6 @@ h1.logo.no-webp {
     }
 }
 
-.about-me {
-
-    h2.section-title {
-        font-size: 3.7rem;
-
-        @media screen and (min-width: 768px) {
-            font-size: 7.5rem;
-        }
-
-        @media screen and (min-width:960px) {
-            font-size: 9rem;
-        }
-    }
-
-    .job-name {
-        h3 {
-            z-index: 1;
-            font-size: 4rem;
-
-            @media screen and (min-width: 768px) {
-                font-size: 5rem;
-            }
-
-            @media screen and (min-width:960px) {
-                font-size: 7rem;
-            }
-
-            font-weight: 800;
-        }
-    }
-
-    .job-title {
-
-        h4 {
-            z-index: 1;
-            font-size: 2rem;
-
-            @media screen and (min-width: 768px) {
-                font-size: 3rem;
-            }
-
-            @media screen and (min-width:960px) {
-                font-size: 4rem;
-            }
-
-            font-weight: 600;
-        }
-    }
-}
 
 // START PAGE CONTENT ----------------------------------------------------/
 
@@ -682,15 +633,15 @@ h1.logo.no-webp {
     display: inline-block;
     margin-left: 15px;
     font-size: 1.3rem;
-    font-weight: 600;
-
-    @media screen and (min-width: 768px) {
+    @media screen and (min-width:768px) {
         font-size: 2.3rem;
     }
 }
 
-.home .section-title {
-    margin-left: 0;
+// hi, i'm Gary title styles
+#about-me .section-title {
+    font-size: 2rem;
+    margin-left: 0px;
 }
 
 .section-title:before,
@@ -706,32 +657,28 @@ h1.logo.no-webp {
 
 .section-title:before {
     top: .05em;
-    right: .1em;
-
-    @media screen and (min-width: 960px) {
-        right: .50em;
-    }
+    right: .50em;
 }
 
 .section-title:after {
     top: .05em;
-    left: .1em;
-
-    @media screen and (min-width: 960px) {
-        left: .50em;
-    }
+    left: .50em;
 }
 
 h2.section-title {
     font-size: 2rem;
-
-    @media screen and (min-width: 768px) {
+    @media screen and (min-width:768px) {
         font-size: 3rem;
     }
 }
 
 .project-title {
     line-height: 1.25;
+}
+
+.my-work {
+    h3 {}
+
 }
 
 .technologies ul {
@@ -743,3 +690,4 @@ h2.section-title {
         line-height: .9;
     }
 }
+

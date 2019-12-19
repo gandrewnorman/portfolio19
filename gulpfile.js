@@ -81,7 +81,7 @@ gulp.task('vendor:build', function() {
         .src([
             "./assets/js/vendor/bootstrap.bundle.min.js",
             "./assets/js/vendor/bootstrap.min.js",
-            "./assets/js/vendor/jquery.min.js",
+            "./assets/js/vendor/jquery.slim.min.js",
             "./assets/js/vendor/popper.min.js",
             "./assets/js/vendor/jquery.magnific-popup.min.js"
         ])
