@@ -353,31 +353,30 @@
         <!-- /Copyright -->
     </footer>
     <!-- /Footer -->
-    <!-- Bootstrap core JavaScript
-================================================== -->
+    <!-- gallery script ================================================== -->  
     <script type="text/javascript">
-    openImg("pic1");
+    openImg('pic1');
 
     function openImg(imgName) {
         var i, x;
-        x = document.getElementsByClassName("stills");
+        x = document.getElementsByClassName('stills');
         for (i = 0; i < x.length; i++) {
-            x[i].style.display = "none";
+            x[i].style.display = 'none';
         }
-        document.getElementById(imgName).style.display = "block";
+        document.getElementById(imgName).style.display = 'block';
     }
     </script>
     <!-- build:vendor -->
     <script src="../assets/js/vendor/lazy.js"></script>
     <script src="../assets/js/vendor/modernizr-custom.js"></script>
     <!-- endbuild -->
-    <!-- Bootstrap core JavaScript
-================================================== -->
+    <!-- Bootstrap core ================================================== -->
     <script src="../assets/js/vendor/jquery.slim.min.js"></script>
     <script src="../assets/js/vendor/jquery.magnific-popup.min.js"></script>
     <script src="../assets/js/vendor/popper.min.js"></script>
     <script src="../assets/js/vendor/bootstrap.min.js"></script>
     <script src="../assets/js/vendor/bootstrap.bundle.min.js"></script>
+    <!-- app javascript ================================================== -->  
     <!-- build:js -->
     <script src="../assets/js/app.js"></script>
     <!-- endbuild -->

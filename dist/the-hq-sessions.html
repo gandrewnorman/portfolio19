@@ -21,10 +21,8 @@
     <link href="../assets/fonts/font-awesome/css/all.min.css" rel="stylesheet" type="text/css" />
     <!-- Stylesheet -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.min.css">
-    <!-- build:css -->
-    <link href="../assets/css/app.css" rel="stylesheet" />
-    <link href="../assets/css/magnific-popup.css" rel="stylesheet" />
-    <!-- endbuild -->
+    <link rel="stylesheet" href="/assets/css/app.min.css">
+    <link rel="stylesheet" href="/assets/css/magnific-popup.min.css">
     <!-- Typekit font embed -->
     <script src="https://use.typekit.net/owi5wgg.js"></script>
     <script>
@@ -353,34 +351,29 @@
         <!-- /Copyright -->
     </footer>
     <!-- /Footer -->
-    <!-- Bootstrap core JavaScript
-================================================== -->
+    <!-- gallery script ================================================== -->  
     <script type="text/javascript">
-    openImg("pic1");
+    openImg('pic1');
 
     function openImg(imgName) {
         var i, x;
-        x = document.getElementsByClassName("stills");
+        x = document.getElementsByClassName('stills');
         for (i = 0; i < x.length; i++) {
-            x[i].style.display = "none";
+            x[i].style.display = 'none';
         }
-        document.getElementById(imgName).style.display = "block";
+        document.getElementById(imgName).style.display = 'block';
     }
     </script>
-    <!-- build:vendor -->
-    <script src="../assets/js/vendor/lazy.js"></script>
-    <script src="../assets/js/vendor/modernizr-custom.js"></script>
-    <!-- endbuild -->
-    <!-- Bootstrap core JavaScript
-================================================== -->
+    <script src="/assets/js/vendor/lazy.min.js"></script>
+    <script src="/assets/js/vendor/modernizr-custom.min.js"></script>
+    <!-- Bootstrap core ================================================== -->
     <script src="../assets/js/vendor/jquery.slim.min.js"></script>
     <script src="../assets/js/vendor/jquery.magnific-popup.min.js"></script>
     <script src="../assets/js/vendor/popper.min.js"></script>
     <script src="../assets/js/vendor/bootstrap.min.js"></script>
     <script src="../assets/js/vendor/bootstrap.bundle.min.js"></script>
-    <!-- build:js -->
-    <script src="../assets/js/app.js"></script>
-    <!-- endbuild -->
+    <!-- app javascript ================================================== -->  
+    <script src="/assets/js/app.min.js"></script>
 </body>
 
 </html>
