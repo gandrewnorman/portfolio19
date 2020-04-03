@@ -10805,6 +10805,14 @@ header .container {
     background: url("/assets/img/gj/gj-header-bg.jpg") #000000 no-repeat center center scroll;
     background-size: cover;
   }
+  .mutiny header.video-header.webp {
+    background: url("/assets/img/mutiny/mutiny-header-bg.webp") #000000 no-repeat center center scroll;
+    background-size: cover;
+  }
+  .mutiny header.video-header.no-webp {
+    background: url("/assets/img/mutiny/mutiny-header-bg.jpg") #000000 no-repeat center center scroll;
+    background-size: cover;
+  }
   header.video-header video {
     display: none;
   }

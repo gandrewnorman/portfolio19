@@ -441,6 +441,16 @@ header .container {
         background-size: cover;
     }
 
+    .mutiny header.video-header.webp {
+        background: url('/assets/img/mutiny/mutiny-header-bg.webp') $black no-repeat center center scroll;
+        background-size: cover;
+    }
+
+    .mutiny header.video-header.no-webp {
+        background: url('/assets/img/mutiny/mutiny-header-bg.jpg') $black no-repeat center center scroll;
+        background-size: cover;
+    }
+
     header.video-header video {
         display: none;
     }

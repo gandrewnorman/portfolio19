@@ -45,7 +45,7 @@ var gulp = require('gulp'),
 
 // Clean task
 gulp.task('clean', function() {
-    return del(['dist', 'assets/css/app.css']);
+    return del(['dist']);
 });
 
 // Copy third party libraries from node_modules into /vendor
