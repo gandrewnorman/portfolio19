@@ -32,7 +32,7 @@
 'use strict';
 
 var gulp = require('gulp'),
-    sass = require('gulp-sass'),
+    sass = require('gulp-sass')(require('sass')),
     del = require('del'),
     uglify = require('gulp-uglify'),
     cleanCSS = require('gulp-clean-css'),
